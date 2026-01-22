@@ -1,11 +1,33 @@
+import json
 class BankAccount:
     Accounts={}
+
+
+
+    def LoadAccount():
+        try:
+            with open("AccountDB.json","r") as file:
+                 content = file.read().strip()
+            if content == "":
+                BankAccount.Accounts = {}
+        except FileNotFoundError:
+            BankAccount.Accounts={}
+
+    def Save_account():
+        with open("AccountDB.json","w") as file:
+            json.dump(BankAccount.Accounts,file,indent=1)
+
+
+
+    
     
     
     def CreateAccount ():
+        BankAccount.LoadAccount()
         AccountName=input("Enter Your Name :")
         if AccountName in BankAccount.Accounts.keys():
             print("Account Already Exists with this name")
+            return
         else:
             BankAccount.Accounts[AccountName]={
                 "AccountName":AccountName,
@@ -18,20 +40,28 @@ class BankAccount:
             print("Enter a Valid Amount")
         else:
             BankAccount.Accounts[AccountName]["Balance"]+=InitalDeposit
+            print("Account Created Successfully")
+            BankAccount.Save_account()
+            
 
     
     def deposit():
+        BankAccount.LoadAccount()
         AccountName=input("Enter Your Name :")
         if AccountName not in BankAccount.Accounts.keys():
             print("Account Not Found")
         else:
-            DepositAmount=int(input("Enter a Amount to Deposite"))
+            DepositAmount=int(input("Enter a Amount to Deposit :"))
             if DepositAmount<0:
                 print("Enter a Valid Amount")
             else:
                 BankAccount.Accounts[AccountName]["Balance"]+=DepositAmount
                 print("Amount Deposited Successfully")
+                BankAccount.Save_account()
+
+
     def Withdraw():
+        BankAccount.LoadAccount()
         AccountName=input("Enter your name :")
         if AccountName not in BankAccount.Accounts.keys():
             print("Account not Found")
@@ -42,14 +72,17 @@ class BankAccount:
             else:
                     BankAccount.Accounts[AccountName]["Balance"]-=WithdrawAmount
                     print("Amount Withdrawn Successfully")
+            BankAccount.Save_account()
     
     def DisplayAccount():
+        BankAccount.LoadAccount()
         AccountName=input("Enter Your Name : ")
         if AccountName not in BankAccount.Accounts.keys():
             print("Bank Account Not Found")
         else:
             print("Account Holder: ", BankAccount.Accounts[AccountName]["AccountName"])
             print("Account Balance: ", BankAccount.Accounts[AccountName]["Balance"])              
+            BankAccount.Save_account()
 
 while True:
     print("\n Welcome to SBA \n") 
