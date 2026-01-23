@@ -15,35 +15,32 @@ class StudentMarksAnalyzer:
         Average["Names"]=df["Name"]
         print(Average)
         outputPath = os.path.join(StudentMarksAnalyzer.scriptDir, "StudentReccords.csv")
-        Average.to_csv(outputPath, mode="a", header=False, index=False)
+        Average.to_csv(outputPath, mode="w", header=False, index=False)
 
     def TopStudentAnalysis():
         df=StudentMarksAnalyzer.df
         DF=pd.DataFrame()
-        DF["TopMarks"]=df[["Math", "Computer", "English"]].max(axis=1)
-        DF["Names"]=df["Name"]
-        print(DF)
-        DF.to_csv("StudentRecords.csv", mode="a", header=False, index=False)
-
+        DF["Average"]=df[["Math", "Computer", "English"]].mean(axis=1)
+        TopMarks=df[df["Average"]]
+        TopAvg=DF["Average"].max()
+        TopStudent=DF[DF["Average"]==TopAvg]["Name"].values
+        print("Top Student:", TopStudent, "with an average of:", TopAvg)
         outputPath=os.path.join(StudentMarksAnalyzer.scriptDir, "StudentReccords.csv")
-        DF.to_csv(outputPath, mode="a", header=False, index=False)
+        TopStudent.to_csv(outputPath, mode="w", header=False, index=False)
 
     def ClassAveragemarks():
         df=StudentMarksAnalyzer.df
         DF=pd.DataFrame()
-        DF["ClassAverage"]=df[["Math", "Computer", "English"]].mean(axis=1)
+        DF["ClassAverage"]=df[["Math", "Computer", "English"]].mean()
         print(DF)
 
     def belowPassGrade():
         df=StudentMarksAnalyzer.df
-        DF=pd.DataFrame()
-        DF["Math Failures"]=df[["Math"]]<50
-        DF["English Failures"]=df[["English"]]<50
-        DF["Computer Failures"]=df[["Computer"]]<50
-        DF["Names"]=df["Name"]
-        print(DF)
-        outputPath=os.path.join(StudentMarksAnalyzer.scriptDir, "StudentReccords.csv")
-        DF.to_csv(outputPath, mode="a", header=False, index=False)
+        failures = {}
+        for subject in ['Math','English','Computer']:
+            failed_students = df[df[subject] < 50]['Name'].tolist()
+            failures[subject] = failed_students
+        print("Failures by subject:", failures)
 
 while True:
     print("Welcome to Student Marks Analyzer")
