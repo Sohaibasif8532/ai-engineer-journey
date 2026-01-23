@@ -36,6 +36,7 @@ class StudentMarksAnalyzer:
 
     def belowPassGrade():
         df=StudentMarksAnalyzer.df
+
         failures = {}
         for subject in ['Math','English','Computer']:
             failed_students = df[df[subject] < 50]['Name'].tolist()
