@@ -1,13 +1,17 @@
 class passwordChecker:
-    Score=0
+    @staticmethod
     def lengthCheck(password):
         return len(password)>=8
+    @staticmethod
     def ContainUpper(password):
         return any(i.isupper()for i in password)
+    @staticmethod
     def Containlower(password):
         return any(i.islower() for i in password)
+    @staticmethod
     def hasdigit(password):
         return any(i.isdigit() for i in password)
+    @staticmethod
     def hasspecial(password):
         return any(not i.isalnum() for i in password)
                 
@@ -26,7 +30,8 @@ class passwordChecker:
         if passwordChecker.Containlower(password):
             score+=1
         else:
-            print("Password must not contain a lowercase letter")
+            print("Password must contain a lowercase letter")
+
         if passwordChecker.hasdigit(password):
             score+=1
         else:
