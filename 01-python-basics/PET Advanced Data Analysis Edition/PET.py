@@ -31,7 +31,7 @@ class PET:
         newrow={
             "Date": datetime.now().strftime("%Y-%m-%d"),
             "Category": Category,
-            "Amount": Amount,
+            "Amount": float(Amount),
             "Description": Description
         }
         df=pd.concat([df, pd.DataFrame([newrow])], ignore_index=True)
@@ -101,7 +101,9 @@ class PET:
             plt.title("Expenses Over Time")
             plt.show()
 
-            plt.bar(df["Category"],df["Amount"])
+
+            categorysum= df.groupby("Category")["Amount"].sum()
+            plt.bar(categorysum.index,categorysum.values)
             plt.xlabel("Category")
             plt.ylabel("Amount")
             plt.title("Expenses by Category")
@@ -132,11 +134,14 @@ if __name__ == "__main__":
                 PET.DeleteExpense(sys.argv[2])
             else:
                 print("Enter Correct Index no To Delete : ")
+                logging.error("Error : Enter Correct Index no To Delete : ")
 
         case "summary":
             if len(sys.argv) == 2:
                 PET.summaryanalytics()
             else:
                 print("Invalid Arguments")
+                logging.error("Error : Invalid Arguments")
         case _:
             print("Invalid command : ")
+            logging.error("Error : Invalid command : ")

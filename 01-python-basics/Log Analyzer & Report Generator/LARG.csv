@@ -1,0 +1,18 @@
+Date,Category,Amount,Description
+2026-01-27,Food,100,Lunch
+2026-01-27,Food,100,Lunch
+2026-01-27,Food,50,Lunch
+2026-01-27,Chips,200,MyFavvv    
+2026-01-27 12:01:28,526 - Log File Exists
+2026-01-27 12:01:28,537 - CSV File Exists
+2026-01-27 12:01:28,555 - Error Exists :2026-01-27 11:16:27,452 - Error : Invalid Arguments
+ Error Count So far : 0
+2026-01-27 12:01:28,556 - Error Exists :2026-01-27 11:16:27,452 - Error : Invalid Arguments
+ Error Count So far : 1
+2026-01-27 12:01:28,556 - Error Exists :2026-01-27 11:16:27,452 - Error : Invalid Arguments
+ Error Count So far : 2
+2026-01-27 12:01:28,556 - Error Exists :2026-01-27 11:16:27,452 - Error : Invalid Arguments
+ Error Count So far : 3
+2026-01-27 12:01:28,557 - Error Exists :2026-01-27 11:16:27,452 - Error : Invalid Arguments
+ Error Count So far : 4
+2026-01-27 12:01:28,557 - Total Errors Found: 5

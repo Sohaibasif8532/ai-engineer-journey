@@ -1,0 +1,118 @@
+2026-01-27 11:56:33,176 - Log File Exists
+2026-01-27 11:56:33,178 - CSV File Exists
+2026-01-27 11:58:21,613 - Log File Exists
+2026-01-27 11:58:21,614 - CSV File Exists
+2026-01-27 11:58:38,355 - Log File Exists
+2026-01-27 11:58:38,355 - CSV File Does Not Exist
+2026-01-27 11:59:12,956 - Log File Exists
+2026-01-27 11:59:12,957 - CSV File Does Not Exist
+2026-01-27 11:59:19,782 - Log File Exists
+2026-01-27 11:59:19,782 - CSV File Exists
+2026-01-27 12:00:30,001 - Log File Exists
+2026-01-27 12:00:30,002 - CSV File Exists
+2026-01-27 12:00:30,180 - Error Exists :2026-01-27 11:16:27,452 - Error : Invalid Arguments
+ Error Count So far : 0
+2026-01-27 12:00:30,181 - Error Exists :2026-01-27 11:16:27,452 - Error : Invalid Arguments
+ Error Count So far : 1
+2026-01-27 12:00:30,182 - Error Exists :2026-01-27 11:16:27,452 - Error : Invalid Arguments
+ Error Count So far : 2
+2026-01-27 12:00:30,183 - Error Exists :2026-01-27 11:16:27,452 - Error : Invalid Arguments
+ Error Count So far : 3
+2026-01-27 12:00:30,184 - Error Exists :2026-01-27 11:16:27,452 - Error : Invalid Arguments
+ Error Count So far : 4
+2026-01-27 12:00:30,185 - Total Errors Found: 5
+2026-01-27 12:01:45,525 - Log File Exists
+2026-01-27 12:01:45,526 - CSV File Exists
+2026-01-27 12:01:45,530 - Error Exists :2026-01-27 11:16:27,452 - Error : Invalid Arguments
+ Error Count So far : 0
+2026-01-27 12:01:45,531 - Error Exists :2026-01-27 11:16:27,452 - Error : Invalid Arguments
+ Error Count So far : 1
+2026-01-27 12:01:45,531 - Error Exists :2026-01-27 11:16:27,452 - Error : Invalid Arguments
+ Error Count So far : 2
+2026-01-27 12:01:45,531 - Error Exists :2026-01-27 11:16:27,452 - Error : Invalid Arguments
+ Error Count So far : 3
+2026-01-27 12:01:45,532 - Error Exists :2026-01-27 11:16:27,452 - Error : Invalid Arguments
+ Error Count So far : 4
+2026-01-27 12:01:45,532 - Total Errors Found: 5
+2026-01-27 12:03:12,343 - Log File Exists
+2026-01-27 12:03:12,343 - CSV File Exists
+2026-01-27 12:03:12,348 - Error Exists :2026-01-27 11:16:27,452 - Error : Invalid Arguments
+ Error Count So far : 0
+2026-01-27 12:03:12,348 - Error Exists :2026-01-27 11:16:27,452 - Error : Invalid Arguments
+ Error Count So far : 1
+2026-01-27 12:03:12,349 - Error Exists :2026-01-27 11:16:27,452 - Error : Invalid Arguments
+ Error Count So far : 2
+2026-01-27 12:03:12,349 - Error Exists :2026-01-27 11:16:27,452 - Error : Invalid Arguments
+ Error Count So far : 3
+2026-01-27 12:03:12,350 - Error Exists :2026-01-27 11:16:27,452 - Error : Invalid Arguments
+ Error Count So far : 4
+2026-01-27 12:03:12,350 - Total Errors Found: 5
+2026-01-27 12:03:33,943 - Log File Exists
+2026-01-27 12:03:33,943 - CSV File Exists
+2026-01-27 12:03:33,948 - Error Exists :2026-01-27 11:16:27,452 - Error : Invalid Arguments
+ Error Count So far : 0
+2026-01-27 12:03:33,948 - Error Exists :2026-01-27 11:16:27,452 - Error : Invalid Arguments
+ Error Count So far : 1
+2026-01-27 12:03:33,949 - Error Exists :2026-01-27 11:16:27,452 - Error : Invalid Arguments
+ Error Count So far : 2
+2026-01-27 12:03:33,949 - Error Exists :2026-01-27 11:16:27,452 - Error : Invalid Arguments
+ Error Count So far : 3
+2026-01-27 12:03:33,950 - Error Exists :2026-01-27 11:16:27,452 - Error : Invalid Arguments
+ Error Count So far : 4
+2026-01-27 12:03:33,950 - Total Errors Found: 5
+2026-01-27 12:05:12,563 - Log File Exists
+2026-01-27 12:05:12,563 - CSV File Exists
+2026-01-27 12:05:12,567 - Error Exists :2026-01-27 11:16:27,452 - Error : Invalid Arguments
+ Error Count So far : 0
+2026-01-27 12:05:12,567 - Error Exists :2026-01-27 11:16:27,452 - Error : Invalid Arguments
+ Error Count So far : 1
+2026-01-27 12:05:12,568 - Error Exists :2026-01-27 11:16:27,452 - Error : Invalid Arguments
+ Error Count So far : 2
+2026-01-27 12:05:12,568 - Error Exists :2026-01-27 11:16:27,452 - Error : Invalid Arguments
+ Error Count So far : 3
+2026-01-27 12:05:12,569 - Error Exists :2026-01-27 11:16:27,452 - Error : Invalid Arguments
+ Error Count So far : 4
+2026-01-27 12:05:12,569 - Total Errors Found: 5
+2026-01-27 12:07:06,943 - Log File Exists
+2026-01-27 12:07:06,943 - CSV File Exists
+2026-01-27 12:07:06,948 - Error Exists :2026-01-27 11:16:27,452 - Error : Invalid Arguments
+ Error Count So far : 0
+2026-01-27 12:07:06,949 - Error Exists :2026-01-27 11:16:27,452 - Error : Invalid Arguments
+ Error Count So far : 1
+2026-01-27 12:07:06,949 - Error Exists :2026-01-27 11:16:27,452 - Error : Invalid Arguments
+ Error Count So far : 2
+2026-01-27 12:07:06,949 - Error Exists :2026-01-27 11:16:27,452 - Error : Invalid Arguments
+ Error Count So far : 3
+2026-01-27 12:07:06,950 - Error Exists :2026-01-27 11:16:27,452 - Error : Invalid Arguments
+ Error Count So far : 4
+2026-01-27 12:07:06,950 - Total Errors Found: 5
+2026-01-27 12:19:21,954 - Log File Exists
+2026-01-27 12:19:21,954 - CSV File Exists
+2026-01-27 12:19:46,357 - Log File Exists
+2026-01-27 12:19:46,357 - CSV File Exists
+2026-01-27 12:22:16,578 - Log File Exists
+2026-01-27 12:22:16,578 - CSV File Exists
+2026-01-27 12:22:16,605 - Error Exists :2026-01-27 11:16:27,452 - Error : Invalid Arguments
+ Error Count So far : 0
+2026-01-27 12:22:16,606 - Error Exists :2026-01-27 11:16:27,452 - Error : Invalid Arguments
+ Error Count So far : 1
+2026-01-27 12:22:16,606 - Error Exists :2026-01-27 11:16:27,452 - Error : Invalid Arguments
+ Error Count So far : 2
+2026-01-27 12:22:16,607 - Error Exists :2026-01-27 11:16:27,452 - Error : Invalid Arguments
+ Error Count So far : 3
+2026-01-27 12:22:16,608 - Error Exists :2026-01-27 11:16:27,452 - Error : Invalid Arguments
+ Error Count So far : 4
+2026-01-27 12:22:16,608 - Total Errors Found: 5
+2026-01-27 12:22:25,715 - Log File Exists
+2026-01-27 12:22:25,716 - CSV File Exists
+2026-01-27 12:22:25,721 - Error Exists :2026-01-27 11:16:27,452 - Error : Invalid Arguments
+ Error Count So far : 0
+2026-01-27 12:22:25,722 - Error Exists :2026-01-27 11:16:27,452 - Error : Invalid Arguments
+ Error Count So far : 1
+2026-01-27 12:22:25,723 - Error Exists :2026-01-27 11:16:27,452 - Error : Invalid Arguments
+ Error Count So far : 2
+2026-01-27 12:22:25,724 - Error Exists :2026-01-27 11:16:27,452 - Error : Invalid Arguments
+ Error Count So far : 3
+2026-01-27 12:22:25,725 - Error Exists :2026-01-27 11:16:27,452 - Error : Invalid Arguments
+ Error Count So far : 4
+2026-01-27 12:22:25,725 - Total Errors Found: 5

@@ -70,7 +70,7 @@ class PET:
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print("Usage: python PET.py <command> [args]")
+        print("Invalid Arguments")
         sys.exit(1)
         
     match sys.argv[1]:
@@ -78,13 +78,13 @@ if __name__ == "__main__":
             if len(sys.argv) >= 5:
                 PET.AddExpense(sys.argv[2],sys.argv[3],sys.argv[4])
             else:
-                 print("Usage: add <Amount> <Category> <Description>")
+                 print("Add All the Columns : Amount, Category, Description : ")
         case "view":
             PET.ViewExpenses()
         case "delete":
             if len(sys.argv) >= 3:
                 PET.DeleteExpense(sys.argv[2])
             else:
-                print("Usage: delete <Index>")
+                print("Enter Correct Index no To Delete : ")
         case _:
-            print("Invalid command")
+            print("Invalid command : ")
