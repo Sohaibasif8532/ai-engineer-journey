@@ -3,6 +3,9 @@ import logging
 import os
 from datetime import datetime 
 import sys
+import matplotlib.pyplot as plt
+
+
 
 FileDir=os.path.dirname(os.path.abspath(__file__))
 csvPath=os.path.join(FileDir, "PET.csv")
@@ -42,12 +45,10 @@ class PET:
         if os.path.exists(PET.csvPath) and os.path.getsize(PET.csvPath) > 0:
             df = pd.read_csv(PET.csvPath)
 
-            # Fix: Use .str accessor for string methods
             if "Category" in df.columns:
                 df["Category"] = df["Category"].astype(str).str.strip()
             if "Date" in df.columns:
                 df["Date"] = df["Date"].astype(str).str.strip()
-
             if category:
                 df = df[df["Category"].str.lower() == category.lower()]  
             if date:
@@ -82,6 +83,32 @@ class PET:
         else:
             print("Invalid index")
 
+
+    @staticmethod
+    def summaryanalytics():
+        if os.path.exists(PET.csvPath) and os.path.getsize(PET.csvPath) > 0:
+            df=pd.read_csv(PET.csvPath)
+            Total=df["Amount"].sum()
+            Average=df["Amount"].mean()
+            Max=df["Amount" ].max()
+            Min=df["Amount"].min()
+            print(f"Total Expenses : {Total}", f"Average Expenses : {Average}", f"Max Expenses : {Max}", f"Min Expenses : {Min}")
+            logging.info(f"Total Expenses : {Total}, Average Expenses : {Average}, Max Expenses : {Max}, Min Expenses : {Min}")
+
+            plt.plot(df["Date"],df["Amount"])
+            plt.xlabel("Date")
+            plt.ylabel("Amount")
+            plt.title("Expenses Over Time")
+            plt.show()
+
+            plt.bar(df["Category"],df["Amount"])
+            plt.xlabel("Category")
+            plt.ylabel("Amount")
+            plt.title("Expenses by Category")
+            plt.show()
+        else:
+            print("No Expenses Found Try adding one : ")
+            sys.exit(1)
     
 
 if __name__ == "__main__":
@@ -105,5 +132,11 @@ if __name__ == "__main__":
                 PET.DeleteExpense(sys.argv[2])
             else:
                 print("Enter Correct Index no To Delete : ")
+
+        case "summary":
+            if len(sys.argv) == 2:
+                PET.summaryanalytics()
+            else:
+                print("Invalid Arguments")
         case _:
             print("Invalid command : ")
