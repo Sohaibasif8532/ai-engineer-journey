@@ -86,17 +86,76 @@ class SalesRetailAnalyzer:
                 print("Product not found")
         else:
             print("File not found")
+    @staticmethod
+    def FilterbyCategory(UserCategory):
+        if os.path.exists(datapath):
+            data=pd.read_csv(datapath)
+            data["Product"] = data["Product"].str.lower()
+            data["Category"] = data["Category"].str.lower()
+            for index,row in data.iterrows():
+                if UserCategory in str(row["Category"]): 
+                    print("Entries for Category found",row)
+                    break
+            else:
+                print("Category not found")
+        else:
+            print("File not found")
     
 
                 
-                
+if __name__ == "__main__":
+    if len(sys.argv)<2:
+        print("Invalid arguments")
+        sys.exit(1)
+    print("="*50)
+    print("1. Total Sales Summary Stats")
+    print("2. Average Sales Summary Stats")
+    print("3. Max Min Sales Summary Stats")
+    print("4. Length Sales Summary Stats")
+    print("5. Filter by Date")
+    print("6. Filter by Product")
+    print("7. Filter by Category")
+    print("="*50)
+    match sys.argv[1]:
+        case "1":
+            if len(sys.argv)==2:
+                SalesRetailAnalyzer.TotalSalesSummaryStats()
+            else:
+                print("Invalid arguments")
+        case "2":
+            if len(sys.argv)==2:
+                SalesRetailAnalyzer.AverageSummaryStats()
+            else:
+                print("Invalid arguments")
+        case "3":
+            if len(sys.argv)==2:
+                SalesRetailAnalyzer.MaxMinSummaryStats()
+            else:
+                print("Invalid arguments")
+        case "4":
+            if len(sys.argv)==2:
+                SalesRetailAnalyzer.LenResultsStats()
+            else:
+                print("Invalid arguments")
+        case "5":
+            if len(sys.argv)==3:
+                SalesRetailAnalyzer.FilterbyDate(sys.argv[2])
+            else:
+                print("Invalid arguments")
+        case "6":
+            if len(sys.argv)==3:
+                SalesRetailAnalyzer.FilterbyProduct(sys.argv[2])
+            else:
+                print("Invalid arguments")
+        case "7":
+            if len(sys.argv)==3:
+                SalesRetailAnalyzer.FilterbyCategory(sys.argv[2])
+            else:
+                print("Invalid arguments")
+        case _:
+            print("Invalid arguments")
+            sys.exit(1)
 
 
 
-SalesRetailAnalyzer.TotalSalesSummaryStats()
-SalesRetailAnalyzer.AverageSummaryStats()
-SalesRetailAnalyzer.MaxMinSummaryStats()
-SalesRetailAnalyzer.LenResultsStats()
-SalesRetailAnalyzer.FilterbyProduct("laptop")
-SalesRetailAnalyzer.FilterbyDate("2026-01-01")
 
