@@ -1,0 +1,16 @@
+Date,Product,Category,Quantity,UnitPrice,Amount,TotalSales,LengthSales
+2026-01-01,laptop,electronics,1,1000,1000,1000,16
+2026-01-01,mouse,electronics,2,25,50,50,16
+2026-01-02,chair,furniture,1,150,150,150,16
+2026-01-02,desk,furniture,1,300,300,300,16
+2026-01-03,notebook,stationery,5,5,25,25,16
+2026-01-03,pen,stationery,10,2,20,20,16
+2026-01-04,headphones,electronics,1,100,100,100,16
+2026-01-04,monitor,electronics,2,200,400,400,16
+2026-01-05,sofa,furniture,1,500,500,500,16
+2026-01-05,marker,stationery,3,3,9,9,16
+2026-01-06,laptop,electronics,1,1000,1000,1000,16
+2026-01-06,mouse,electronics,1,25,25,25,16
+2026-01-07,chair,furniture,2,150,300,300,16
+2026-01-07,desk,furniture,1,300,300,300,16
+2026-01-08,notebook,stationery,10,5,50,50,16
