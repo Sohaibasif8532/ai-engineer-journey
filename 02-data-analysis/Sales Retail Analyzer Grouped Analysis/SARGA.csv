@@ -1,0 +1,11 @@
+OrderID,Customer,Category,TotalSales,Month,Date
+1,Ali,Electronics,200,Jan,2022-01-01
+2,Sara,Clothing,50,Jan,2022-01-02
+3,Ali,Electronics,300,Feb,2022-02-01
+4,John,Clothing,100,Feb,2022-02-02
+5,Sara,Electronics,150,Mar,2022-03-01
+6,Ali,Furniture,400,Mar,2022-03-02
+7,John,Electronics,250,Apr,2022-04-01
+8,Sara,Furniture,350,Apr,2022-04-02
+9,Ali,Clothing,80,May,2022-05-01
+10,John,Electronics,500,May,2022-06-01
