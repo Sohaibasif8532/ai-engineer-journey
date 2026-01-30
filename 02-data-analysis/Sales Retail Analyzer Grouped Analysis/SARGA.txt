@@ -1,0 +1,79 @@
+📊 Sales Retail Grouped Analysis (SARGA)
+
+This project is a small analytics engine built in Python using pandas and matplotlib.
+It loads a retail sales dataset and provides multiple business-focused insights such as:
+
+Which categories bring the most revenue
+
+How sales change day by day
+
+Which customers spend the most
+
+How categories compare by average performance
+
+Dynamic filtering by date, category, and customer
+
+The goal of this project is not just to plot charts, but to practice analytical thinking — slicing data, aggregating it, and answering real business questions.
+
+🔧 Features
+
+Sales by Category – Total revenue per category (bar chart)
+
+Top Categories – Highest performing categories by sales
+
+Daily Revenue Trend – Time series of daily revenue
+
+Category Performance Comparison – Average revenue per category + order count
+
+Filter by Date – Drill into a single day’s sales
+
+Filter by Category – Analyze a specific business segment
+
+Filter by Customer – See customer spending behavior
+
+All outputs are shown as both tables and charts.
+
+🗂 Dataset
+
+The project uses a CSV file named SARGA.csv with the following structure:
+
+OrderID,Customer,Category,TotalSales,Month,Date
+1,Ali,Electronics,200,Jan,2022-01-01
+2,Sara,Clothing,50,Jan,2022-01-02
+3,Ali,Electronics,300,Feb,2022-02-01
+...
+
+▶️ How to Run
+python SARGA.py
+
+
+Edit the bottom of the file to call any function you want:
+
+SARGA.FilterByCategory("Electronics")
+SARGA.FilterByDate("2022-01-01")
+SARGA.SalesbyDay()
+
+🧠 What This Project Teaches
+
+This project is focused on analysis logic, not just pandas syntax:
+
+Filter → Group → Aggregate → Compare → Visualize
+
+Turning raw data into business answers
+
+Building features that later feed ML models
+
+This is the same thinking used in real data analytics and ML pipelines.
+
+⚠️ Known Limitation (Planned Refactor)
+
+Currently, each function reloads the dataset from disk.
+This works for small files, but it is not scalable.
+
+In the next refactor:
+
+The dataset will be loaded once
+
+Then passed through an analysis pipeline
+
+Making the tool faster, cleaner, and more professional
