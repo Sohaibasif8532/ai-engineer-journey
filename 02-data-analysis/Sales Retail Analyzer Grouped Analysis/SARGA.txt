@@ -65,15 +65,3 @@ Building features that later feed ML models
 
 This is the same thinking used in real data analytics and ML pipelines.
 
-⚠️ Known Limitation (Planned Refactor)
-
-Currently, each function reloads the dataset from disk.
-This works for small files, but it is not scalable.
-
-In the next refactor:
-
-The dataset will be loaded once
-
-Then passed through an analysis pipeline
-
-Making the tool faster, cleaner, and more professional
