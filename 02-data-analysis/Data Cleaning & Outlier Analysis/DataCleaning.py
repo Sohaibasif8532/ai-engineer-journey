@@ -22,23 +22,24 @@ class DataCleaning:
         self.df=pd.read_csv(Data)
         return self.df
 
-    def NormalizeTranscationID(self):
+    def NormalizeTransactionID(self):
         self.df["Transaction ID"]=self.df["Transaction ID"].astype(str).str.lower().str.strip()
-        self.df.to_csv(Data, index=False)
+        duplicates=self.df["Transaction ID"].duplicated().sum()
+        self.df=self.df.drop_duplicates(subset=["Transaction ID"])
         with open(logfile,"a") as f:
-            f.write(f"{datetime.datetime.now()}: Transaction ID normalized\n")
+            f.write(f"{datetime.datetime.now()}: Transaction ID normalized, Duplicates Removed : {duplicates}\n")
         print("Transaction ID normalized")
     
     def NormalizeCustomerID(self):
         self.df["Customer ID"]=self.df["Customer ID"].astype(str).str.lower().str.strip()
-        self.df.to_csv(Data, index=False)
+        
         with open(logfile,"a") as f:
             f.write(f"{datetime.datetime.now()}: Customer ID normalized\n")
         print("Customer ID normalized")
     
     def NormalizeCategory(self):
         self.df["Category"]=self.df["Category"].astype(str).str.lower().str.strip().str.replace(r"\s+"," ",regex=True)
-        self.df.to_csv(Data, index=False)
+        
         with open(logfile,"a") as f:
             f.write(f"{datetime.datetime.now()}: Category normalized\n")
         print("Category normalized")
@@ -46,7 +47,6 @@ class DataCleaning:
     def NormalizeProduct(self):
         self.df["Item"]=self.df["Item"].astype(str).str.lower().str.strip().str.replace(r"\s+"," ",regex=True)
         self.df=self.df.dropna(subset=["Item"])
-        self.df.to_csv(Data, index=False)
         with open(logfile,"a") as f:
             f.write(f"{datetime.datetime.now()}: Product normalized\n")
         print("Product normalized")
@@ -54,7 +54,6 @@ class DataCleaning:
     def NormalizePricePerUnit(self):
         self.df=self.df.dropna(subset=["Price Per Unit"])
         missingvals=self.df["Price Per Unit"].isna().sum()
-        self.df.to_csv(Data, index=False)
         with open(logfile,"a") as f:
             f.write(f"{datetime.datetime.now()}: Missing Values Removed : {missingvals}\n")
         print("Price Per Unit normalized")
@@ -62,7 +61,6 @@ class DataCleaning:
     def NormalizeQuantity(self):
         Missingvalues=self.df["Quantity"].isna().sum()
         self.df=self.df.dropna(subset=["Quantity"])
-        self.df.to_csv(Data, index=False)   
         with open(logfile,"a") as f:
             f.write(f"{datetime.datetime.now()}:Missing Values Removed : {Missingvalues}\n")
         print("Quantity normalized")
@@ -71,28 +69,25 @@ class DataCleaning:
         missingvals=self.df["Total Spent"].isna().sum()
         print(f"Missing values in Total Spent: {missingvals}")
         self.df=self.df.dropna(subset=["Total Spent"])
-        self.df.to_csv(Data, index=False)
+
         with open(logfile,"a") as f:
             f.write(f"{datetime.datetime.now()}: Missing Values Removed : {missingvals}\n")
         print("Total Spent normalized")
     
     def NormalizePaymentMethod(self):
         self.df["Payment Method"]=self.df["Payment Method"].astype(str).str.lower().str.strip().str.replace(r"\s+"," ",regex=True)
-        self.df.to_csv(Data, index=False)
         with open(logfile,"a") as f:
             f.write(f"{datetime.datetime.now()}: Payment Method normalized\n")
         print("Payment Method normalized")
 
     def NormalizeLocation(self):
         self.df["Location"]=self.df["Location"].astype(str).str.lower().str.strip().str.replace(r"\s+"," ",regex=True)
-        self.df.to_csv(Data, index=False)
         with open(logfile,"a") as f:
             f.write(f"{datetime.datetime.now()}: Location normalized\n")
         print("Location normalized")
     
     def NormalizeDate(self):
         self.df["Transaction Date"]=pd.to_datetime(self.df["Transaction Date"])
-        self.df.to_csv(Data, index=False)
         with open(logfile,"a") as f:
             f.write(f"{datetime.datetime.now()}:Transaction Date normalized\n")
         print("Transaction Date normalized")
@@ -100,7 +95,6 @@ class DataCleaning:
     def NormalizeDiscountApplied(self):
         missingvals=self.df["Discount Applied"].isna().sum()
         self.df["Discount Applied"] = self.df["Discount Applied"].fillna("Unknown")
-        self.df.to_csv(Data, index=False)
         with open(logfile,"a") as f:
             f.write(f"{datetime.datetime.now()}: Missing Values Removed : {missingvals}, Discount Applied normalized\n")
         print("Discount Applied normalized")
@@ -125,7 +119,7 @@ class DataCleaning:
 
 
 app=DataCleaning()
-app.NormalizeTranscationID()
+app.NormalizeTransactionID()
 app.NormalizeCustomerID()
 app.NormalizeCategory()
 app.NormalizeProduct()

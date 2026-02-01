@@ -89,3 +89,14 @@
 2026-02-01 06:40:56.396196:Transaction Date normalized
 2026-02-01 06:40:56.471135: Missing Values Removed : 0, Discount Applied normalized
 2026-02-01 06:40:56.547606: Data Cleaning Completed
+2026-02-01 07:03:43.845311: Transaction ID normalized, Duplicates Removed : 0
+2026-02-01 07:03:43.850968: Customer ID normalized
+2026-02-01 07:03:43.870119: Category normalized
+2026-02-01 07:03:43.906630: Product normalized
+2026-02-01 07:03:43.912284: Missing Values Removed : 0
+2026-02-01 07:03:43.915077:Missing Values Removed : 0
+2026-02-01 07:03:43.918544: Missing Values Removed : 0
+2026-02-01 07:03:43.935926: Payment Method normalized
+2026-02-01 07:03:43.973998:Transaction Date normalized
+2026-02-01 07:03:43.976171: Missing Values Removed : 0, Discount Applied normalized
+2026-02-01 07:03:44.066766: Data Cleaning Completed
