@@ -1,0 +1,91 @@
+2026-02-01 06:10:21.950343: Transaction ID normalized
+2026-02-01 06:10:22.018374: Customer ID normalized
+2026-02-01 06:10:22.130732: Category normalized
+2026-02-01 06:10:22.295406: Product normalized
+2026-02-01 06:10:22.510988: Price Per Unit normalized
+2026-02-01 06:10:22.593900: Quantity normalized
+2026-02-01 06:10:22.671546: Total Spent normalized
+2026-02-01 06:13:31.858144: Transaction ID normalized
+2026-02-01 06:13:31.929787: Customer ID normalized
+2026-02-01 06:13:32.014327: Category normalized
+2026-02-01 06:13:32.172576: Product normalized
+2026-02-01 06:13:32.319103: Missing Values Removed : 0 and Outliers Removed : 0
+2026-02-01 06:13:32.392271:Missing Values Removed : 0 and Outliers Removed : 0
+2026-02-01 06:13:32.464762: Missing Values Removed : 0 and Outliers Removed : 0
+2026-02-01 06:16:01.943769: Transaction ID normalized
+2026-02-01 06:16:02.048282: Customer ID normalized
+2026-02-01 06:16:02.140540: Category normalized
+2026-02-01 06:16:02.314209: Product normalized
+2026-02-01 06:16:02.455259: Missing Values Removed : 0 and Outliers Removed : 0
+2026-02-01 06:16:02.530553:Missing Values Removed : 0 and Outliers Removed : 0
+2026-02-01 06:16:02.609101: Missing Values Removed : 0 and Outliers Removed : 0
+2026-02-01 06:16:02.758452: Payment Method normalized
+2026-02-01 06:16:02.882979: Date normalized
+2026-02-01 06:22:38.480885: Transaction ID normalized
+2026-02-01 06:22:38.576863: Customer ID normalized
+2026-02-01 06:22:38.672722: Category normalized
+2026-02-01 06:22:38.839565: Product normalized
+2026-02-01 06:22:39.032444: Missing Values Removed : 0 and Outliers Removed : 0
+2026-02-01 06:22:39.114703:Missing Values Removed : 0 and Outliers Removed : 0
+2026-02-01 06:22:39.198600: Missing Values Removed : 0 and Outliers Removed : 0
+2026-02-01 06:22:39.295763: Payment Method normalized
+2026-02-01 06:22:39.381849:Transaction Date normalized
+2026-02-01 06:24:01.323657: Transaction ID normalized
+2026-02-01 06:24:01.397602: Customer ID normalized
+2026-02-01 06:24:01.506048: Category normalized
+2026-02-01 06:24:01.763146: Product normalized
+2026-02-01 06:24:01.907829: Missing Values Removed : 0 and Outliers Removed : 0
+2026-02-01 06:24:01.993872:Missing Values Removed : 0 and Outliers Removed : 0
+2026-02-01 06:24:02.070214: Missing Values Removed : 0 and Outliers Removed : 0
+2026-02-01 06:24:02.149358: Payment Method normalized
+2026-02-01 06:24:02.234293:Transaction Date normalized
+2026-02-01 06:24:46.651982: Transaction ID normalized
+2026-02-01 06:24:46.721565: Customer ID normalized
+2026-02-01 06:24:46.817651: Category normalized
+2026-02-01 06:24:47.051735: Product normalized
+2026-02-01 06:24:47.240142: Missing Values Removed : 0 and Outliers Removed : 0
+2026-02-01 06:24:47.328179:Missing Values Removed : 0 and Outliers Removed : 0
+2026-02-01 06:24:47.400058: Missing Values Removed : 0 and Outliers Removed : 0
+2026-02-01 06:24:47.487428: Payment Method normalized
+2026-02-01 06:24:47.568976:Transaction Date normalized
+2026-02-01 06:25:17.740892: Transaction ID normalized
+2026-02-01 06:25:17.834862: Customer ID normalized
+2026-02-01 06:25:17.924330: Category normalized
+2026-02-01 06:25:18.083558: Product normalized
+2026-02-01 06:25:18.216530: Missing Values Removed : 0 and Outliers Removed : 0
+2026-02-01 06:25:18.301211:Missing Values Removed : 0 and Outliers Removed : 0
+2026-02-01 06:25:18.377610: Missing Values Removed : 0 and Outliers Removed : 0
+2026-02-01 06:25:18.459589: Payment Method normalized
+2026-02-01 06:25:18.693256:Transaction Date normalized
+2026-02-01 06:25:18.790599: Missing Values Removed : 3764, Discount Applied normalized
+2026-02-01 06:26:48.775182: Transaction ID normalized
+2026-02-01 06:26:48.918502: Customer ID normalized
+2026-02-01 06:26:49.071976: Category normalized
+2026-02-01 06:26:49.241527: Product normalized
+2026-02-01 06:26:49.400985: Missing Values Removed : 0 and Outliers Removed : 0
+2026-02-01 06:26:49.510166:Missing Values Removed : 0 and Outliers Removed : 0
+2026-02-01 06:26:49.621670: Missing Values Removed : 0 and Outliers Removed : 0
+2026-02-01 06:26:49.707838: Payment Method normalized
+2026-02-01 06:26:49.827952:Transaction Date normalized
+2026-02-01 06:26:49.920779: Missing Values Removed : 3764, Discount Applied normalized
+2026-02-01 06:38:17.152373: Transaction ID normalized
+2026-02-01 06:38:17.291938: Customer ID normalized
+2026-02-01 06:38:17.426550: Category normalized
+2026-02-01 06:38:17.520893: Product normalized
+2026-02-01 06:38:17.590624: Missing Values Removed : 0
+2026-02-01 06:38:17.660500:Missing Values Removed : 0
+2026-02-01 06:38:17.756879: Missing Values Removed : 0
+2026-02-01 06:38:17.840495: Payment Method normalized
+2026-02-01 06:38:17.920202:Transaction Date normalized
+2026-02-01 06:38:18.056071: Missing Values Removed : 0, Discount Applied normalized
+2026-02-01 06:40:55.724467: Transaction ID normalized
+2026-02-01 06:40:55.815594: Customer ID normalized
+2026-02-01 06:40:55.916636: Category normalized
+2026-02-01 06:40:56.014309: Product normalized
+2026-02-01 06:40:56.085018: Missing Values Removed : 0
+2026-02-01 06:40:56.153717:Missing Values Removed : 0
+2026-02-01 06:40:56.221641: Missing Values Removed : 0
+2026-02-01 06:40:56.309147: Payment Method normalized
+2026-02-01 06:40:56.396196:Transaction Date normalized
+2026-02-01 06:40:56.471135: Missing Values Removed : 0, Discount Applied normalized
+2026-02-01 06:40:56.547606: Data Cleaning Completed
