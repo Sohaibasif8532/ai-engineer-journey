@@ -3,6 +3,7 @@ import datetime as dt
 import os
 import matplotlib.pyplot as plt
 import pandas as pd
+from datetime import datetime
 
 filedir=os.path.dirname(os.path.abspath(__file__))
 projectroot=filedir
@@ -47,11 +48,16 @@ class EDA_Pipeline:
             "max":"Maximum"
         }
         Stats=Stats.rename(columns=Friendly_Stats)
-        TotalRevenue=df.groupby("Category").agg(
-            total_revenue=("Total Spent","sum"),
-            average_order_value=("Total Spent","mean"),
-            Total_Orders=("Total Spent","count"),
-
+        df["Total Spent"] = pd.to_numeric(df["Total Spent"], errors="coerce") 
+        df["Quantity"] = pd.to_numeric(df["Quantity"], errors="coerce")
+        df["Unit Price"] = df["Total Spent"] / df["Quantity"]                 
+        df["HighValueTransaction"] = df["Total Spent"] > 1000   
+        TotalRevenue = df.groupby("Category").agg(
+            total_revenue=("Total Spent", "sum"),
+            average_order_value=("Total Spent", "mean"),
+            Total_Orders=("Total Spent", "count"),
+            average_unit_price=("Unit Price", "mean"),
+            has_high_value_transaction=("HighValueTransaction", lambda x: x.any())  
         ).reset_index()
 
 
@@ -60,10 +66,11 @@ class EDA_Pipeline:
         ).reset_index()
 
 
-        Top_N_customers_by_spend=df.groupby("Customer ID").agg(
-            TotalSpent=("Total Spent","sum")
-            ).sort_values(by="TotalSpent",ascending=False).reset_index()
-        print(TotalRevenue)
+        customer_stats = df.groupby("Customer ID").agg(
+            TotalSpent=("Total Spent", "sum"),
+            AverageSpent=("Total Spent", "mean"),
+            Customer_Purchase_Count=("Customer ID","count"),
+        ).reset_index()
 
 
         df["Month"] = pd.to_datetime(df["Transaction Date"]).dt.month
@@ -72,16 +79,54 @@ class EDA_Pipeline:
         ).reset_index()
         
         Stats.to_csv(self.outputDataGeneral,index=False)
-        TotalRevenue.to_csv(self.output_data_aggregated,index=False,mode="a")
-        RevenuePerPaymentMethod.to_csv(self.output_data_payment,index=False,mode="a")
-        Top_N_customers_by_spend.to_csv(self.output_data_top_customers,index=False,mode="a")
-        Monthly_Revenue.to_csv(self.output_data_monthly_revenue,index=False,mode="a")
-        with open(self.logs, "a") as f:
+        TotalRevenue.to_csv(self.output_data_aggregated,index=False,mode="w", header=True)
+        RevenuePerPaymentMethod.to_csv(self.output_data_payment,index=False,mode="w", header=True)
+        customer_stats.to_csv(self.output_data_top_customers,index=False,mode="w", header=True)
+        Monthly_Revenue.to_csv(self.output_data_monthly_revenue,index=False,mode="w", header=True)
+        with open(self.logs, "w") as f:
+            f.write("*"*226)
+            f.write("\n")
+            f.write("\n")
+            f.write(f"General Stats Added at :{datetime.now()}")
+            f.write("\n")
+            f.write("\n")
             f.write("*"*226)
             f.write("\n")
             f.write(Stats.to_string())
             f.write("\n")
             f.write(TotalRevenue.to_string())
+            f.write("\n")
+            f.write("\n")
+            f.write("*"*226)
+            f.write("\n")
+            f.write("\n")
+            f.write(f"Revenue Per Payment Method Added at :{datetime.now()}")
+            f.write("\n")            
+            f.write("\n")
+            f.write("*"*226)
+            f.write("\n")
+            f.write(RevenuePerPaymentMethod.to_string())
+            f.write("\n")
+            f.write("*"*226)
+            f.write("\n")
+            f.write("\n")
+            f.write(f"Top Customers Added at :{datetime.now()}")
+            f.write("\n")
+            f.write("\n")
+            f.write("*"*226)
+            f.write("\n")
+            f.write(customer_stats.to_string())
+            f.write("\n")
+            f.write("*"*226)
+            f.write("\n")
+            f.write("\n")
+            f.write(f"Monthly Revenue Added at :{datetime.now()}")
+            f.write("\n")
+            f.write("\n")
+            f.write("*"*226)
+            f.write("\n")
+            f.write("\n")
+            f.write(Monthly_Revenue.to_string())
             f.write("\n")
             f.write("*"*226)
             f.write("\n")
