@@ -35,7 +35,7 @@ class EDA_Pipeline:
     
     def descriptive_stats(self):
         df=pd.read_csv(self.inputData)
-        Stats=df.groupby("Category").describe()
+        Stats=df.groupby("Category").describe().reset_index()
         Friendly_Stats={
             "count":"Total Records",
             "mean":"Average",
@@ -50,7 +50,7 @@ class EDA_Pipeline:
         TotalRevenue=df.groupby("Category").agg(
             total_revenue=("Total Spent","sum"),
             average_order_value=("Total Spent","mean"),
-            revenue_per_category=("Total Spent","count"),
+            Total_Orders=("Total Spent","count"),
 
         ).reset_index()
 
