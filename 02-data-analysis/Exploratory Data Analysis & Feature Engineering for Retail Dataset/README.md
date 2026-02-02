@@ -1,186 +1,90 @@
-Exploratory Data Analysis (EDA) Pipeline for Retail Transactions
+# Data Cleaning Pipeline for Retail Transactions
 
-This repository contains a production-style Python EDA pipeline for analyzing retail transaction data.
-The pipeline cleans raw data, engineers features, and generates business-ready summary tables in CSV format.
+This project contains a **Python class-based data cleaning pipeline** for retail transaction data.  
+It normalizes and prepares a dataset for analysis by handling missing values, text inconsistencies, and numeric outliers, while logging all operations.
 
-It is designed to support:
+---
 
-Business reporting
+## Features
 
-Data analysis workflows
+### Transaction ID & Customer ID Normalization
+Converts IDs to lowercase, strips whitespace, and ensures consistency.
 
-Feature engineering for machine learning
+### Category & Product Normalization
+Cleans category and item names, removes extra spaces, and handles missing product entries.
 
-Project Structure
-Exploratory Data Analysis & Feature Engineering for Retail Dataset/
-│
-├── EDA_pipeline.py
+### Numeric Data Cleaning
+Handles missing values and removes outliers in:
+- Price Per Unit
+- Quantity
+- Total Spent
+
+### Payment Method & Location Normalization
+Standardizes text for consistent values.
+
+### Transaction Date Parsing
+Converts dates to `datetime` objects for proper analysis.
+
+### Discount Applied Handling
+Fills missing discount values with `"Unknown"` to avoid inconsistencies.
+
+### Logging
+Every cleaning step is logged in `Cleaning.log` with timestamps for traceability.
+
+---
+
+## Installation
+
+### Clone the repository
+
+git clone https://github.com/Sohaibasif8532/data-cleaning-pipeline.git
+cd data-cleaning-pipeline
+
+### Install dependencies
+```bash
+pip install pandas numpy matplotlib
+```
+
+### Usage
+```python
+from data_cleaning import DataCleaning
+
+app = DataCleaning()
+app.NormalizeTransactionID()
+app.NormalizeCustomerID()
+app.NormalizeCategory()
+app.NormalizeProduct()
+app.NormalizePricePerUnit()
+app.NormalizeQuantity()
+app.NormalizeTotalSpent()
+app.NormalizePaymentMethod()
+app.NormalizeDate()
+app.NormalizeDiscountApplied()
+app.save_and_log("Data Cleaning Completed")
+```
+
+### Project Structure
+```bash
+├── Data.csv
+├── Cleaning.log
+├── data_cleaning.py
 ├── README.md
-├── data/
-│   ├── input/
-│   │   └── data.csv
-│   │
-│   └── output/
-│       ├── EDA_aggrevated_results/
-│       │   └── EDA_Featured_output.csv
-│       │
-│       ├── EDA_general_stats/
-│       │   └── EDA_Featured_output.csv
-│       │
-│       ├── EDA_Revenue_output/
-│       │   └── EDA_Revenue_output.csv
-│       │
-│       ├── EDA_top_customers/
-│       │   └── EDA_top_customers.csv
-│       │
-│       └── EDA_monthly_revenue/
-│           └── EDA_monthly_revenue.csv
-│
-└── logs/
-    └── EDA_logs.log
+```
 
-Pipeline Overview
+### Notes
 
-The pipeline performs the following steps:
+The pipeline is designed to see the effect of each cleaning function individually.
 
-1. Data Cleaning
+Outliers in numeric columns can be removed using remove_outliers(column_name).
 
-Converts numeric fields (Total Spent, Quantity) to proper numeric types
+Missing or malformed data is handled safely to avoid crashes.
 
-Handles invalid values using coercion
+Intended for small to medium retail datasets.
 
-Generates derived features:
+### Author
 
-Unit Price = Total Spent / Quantity
-
-HighValueTransaction = True if Total Spent > 1000
-
-2. Descriptive Statistics (by Category)
-
-Output:
-
-data/output/EDA_general_stats/EDA_Featured_output.csv
-
-
-Includes:
-
-Total Records
-
-Average
-
-Standard Deviation
-
-Minimum
-
-25th, 50th, 75th Percentiles
-
-Maximum
-
-Grouped by Category.
-
-3. Revenue & Order Summary (by Category)
-
-Output:
-
-data/output/EDA_aggrevated_results/EDA_Featured_output.csv
-
-
-Columns:
-
-Category
-
-Total Revenue
-
-Average Order Value
-
-Total Orders
-
-Average Unit Price
-
-Has High Value Transaction (True/False)
-
-4. Revenue by Payment Method
-
-Output:
-
-data/output/EDA_Revenue_output/EDA_Revenue_output.csv
-
-
-Columns:
-
-Payment Method
-
-Total Revenue
-
-5. Customer-Level Metrics
-
-Output:
-
-data/output/EDA_top_customers/EDA_top_customers.csv
-
-
-Columns:
-
-Customer ID
-
-Total Spent
-
-Average Spent
-
-Customer Purchase Count
-
-6. Monthly Revenue
-
-Output:
-
-data/output/EDA_monthly_revenue/EDA_monthly_revenue.csv
-
-
-Columns:
-
-Month
-
-Monthly Revenue
-
-How to Run
-
-Place your dataset in:
-
-data/input/data.csv
-
-
-Run:
-
-python EDA_pipeline.py
-
-
-Generated reports will appear in:
-
-data/output/
-
-Logging
-
-All execution details and summaries are recorded in:
-
-logs/EDA_logs.log
-
-Technologies Used
-
-Python
-
-Pandas
-
-NumPy
-
-OS
-
-Matplotlib
-
-Author
-
-Sohaib Asif
-Bachelor’s in Artificial Intelligence, Bahria University
+**Sohaib Asif**
+Bachelor in Artificial Intelligence | Data Enthusiast
 
 GitHub: https://github.com/Sohaibasif8532
-
 LinkedIn: https://www.linkedin.com/in/sohaib-asif-28389627b/
