@@ -99,21 +99,14 @@ class RDCBA:
         self.df["Quantity"]=self.df["Quantity"].astype(str).str.replace(r"[^\d.]", "", regex=True).astype(float)
         self.df["Price"]=pd.to_numeric(self.df["Price"], errors="coerce")
         self.df["Quantity"]=pd.to_numeric(self.df["Quantity"], errors="coerce")
-        Q1=self.df["Price"].quantile(0.25)
-        Q3=self.df["Price"].quantile(0.75)
+        
+        cols= ["Price", "Quantity"]
+        Q1=self.df[cols].quantile(0.25)
+        Q3=self.df[cols].quantile(0.75)
         IQR=Q3-Q1
         lower_bound=Q1-1.5*IQR
         upper_bound=Q3+1.5*IQR
-        self.df=self.df[(self.df["Price"]>=lower_bound) & (self.df["Price"]<=upper_bound)]
-        print(f"Removed Outliers using IQR Method")
-        logging.info(f"Outliers Removed using IQR Method")
-
-        Q2=self.df["Quantity"].quantile(0.5)
-        Q4=self.df["Quantity"].quantile(0.75)
-        IQR2=Q4-Q2
-        lower_bound2=Q2-1.5*IQR2
-        upper_bound2=Q4+1.5*IQR2
-        self.df=self.df[(self.df["Quantity"]>=lower_bound2) & (self.df["Quantity"]<=upper_bound2)]
+        mask = ~((self.df[["Price", "Quantity"]] < lower_bound) | (self.df[["Price", "Quantity"]] > upper_bound)).any(axis=1)
         print(f"Removed Outliers using IQR Method")
         logging.info(f"Outliers Removed using IQR Method")
     
