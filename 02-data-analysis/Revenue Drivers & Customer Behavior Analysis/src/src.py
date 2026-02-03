@@ -24,10 +24,15 @@ class RDCBA:
         self.featured=featured
         self.logfiles=logfiles
 
+        logging.basicConfig(
+            filename=self.logfiles,
+            level=logging.INFO,
+            format="%(asctime)s - %(levelname)s - %(message)s"
+        )
+
     def loadData(self):
         if os.path.exists(self.inputdata):
             self.df=pd.read_csv(self.inputdata)
-            self.Cleaned=pd.read_csv(self.cleaned)
             print("Data Loaded Successfully")
             return self.df
         else:
@@ -55,18 +60,18 @@ class RDCBA:
         
         if self.df["Transaction_ID"].isnull().any():
             self.df["Transaction_ID"].ffill(inplace=True)
-            logging.info(f"Null Values Removed from Transaction ID :{self.df["Transaction_ID"].isnull().sum()} ")
+            logging.info(f"Null Values Removed from Transaction ID :{self.df['Transaction_ID'].isnull().sum()} ")
         if self.df["Transaction_Date"].isnull().any():
             self.df["Transaction_Date"].ffill(inplace=True)
-            logging.info(f"Null Values Removed from Transaction Date :{self.df["Transaction_Date"].isnull().sum()} ")
+            logging.info(f"Null Values Removed from Transaction Date :{self.df['Transaction_Date'].isnull().sum()} ")
             
         if self.df["Customer_ID"].isnull().any():
             self.df["Customer_ID"].ffill(inplace=True)  
-            logging.info(f"Null Values Removed from Customer ID :{self.df["Customer_ID"].isnull().sum()} ")
+            logging.info(f"Null Values Removed from Customer ID :{self.df['Customer_ID'].isnull().sum()} ")
            
         if self.df["Product_Name"].isnull().any():
             self.df["Product_Name"].dropna(inplace=True)
-            logging.info(f"Null Values Removed from Product Name :{self.df["Product_Name"].isnull().sum()} ")
+            logging.info(f"Null Values Removed from Product Name :{self.df['Product_Name'].isnull().sum()} ")
             
             
         self.df = self.df.dropna(subset=["Quantity", "Price"])
@@ -74,9 +79,9 @@ class RDCBA:
             
         if self.df["Transaction_Status"].isnull().any():
             self.df["Transaction_Status"].fillna("Unknown", inplace=True)
-            logging.info(f"Null Values Removed from Transaction Status :{self.df["Transaction_Status"].isnull().sum()} ")
+            logging.info(f"Null Values Removed from Transaction Status :{self.df['Transaction_Status'].isnull().sum()} ")
             
-        print(f"Removed Null Values, \n Current Null Values Count:\n{self.Cleaned.isnull().sum()}")
+        print(f"Removed Null Values, \n Current Null Values Count:\n{self.df.isnull().sum()}")
         logging.info(f"Null Values Found : {self.df.isnull().sum()}")
     
     def RemoveDuplicates(self):
@@ -90,25 +95,27 @@ class RDCBA:
         print("*"*50)
         print("\n")
         print("Duplicates Removed Safely")
-        print(f"Current Duplicates Count : {self.Cleaned['Transaction_ID'].duplicated().sum()}")
+        print(f"Current Duplicates Count : {self.df['Transaction_ID'].duplicated().sum()}")
         print("*"*50)
         print("\n")
 
     def IQR(self):
-        self.df["Price"]=self.df["Price"].astype(str).str.replace(r"[^\d.]", "", regex=True).astype(float)
-        self.df["Quantity"]=self.df["Quantity"].astype(str).str.replace(r"[^\d.]", "", regex=True).astype(float)
-        self.df["Price"]=pd.to_numeric(self.df["Price"], errors="coerce")
-        self.df["Quantity"]=pd.to_numeric(self.df["Quantity"], errors="coerce")
-        
+
         cols= ["Price", "Quantity"]
+        self.df[["Price", "Quantity"]] = self.df[["Price", "Quantity"]].apply(
+            lambda x: pd.to_numeric(x.astype(str).str.replace(r"[^\d.]", "", regex=True), errors="coerce")
+        )
+        
         Q1=self.df[cols].quantile(0.25)
         Q3=self.df[cols].quantile(0.75)
         IQR=Q3-Q1
         lower_bound=Q1-1.5*IQR
         upper_bound=Q3+1.5*IQR
         mask = ~((self.df[["Price", "Quantity"]] < lower_bound) | (self.df[["Price", "Quantity"]] > upper_bound)).any(axis=1)
+        self.df = self.df[mask]
         print(f"Removed Outliers using IQR Method")
         logging.info(f"Outliers Removed using IQR Method")
+        
     
     def saveCleanedData(self):
         self.df.to_csv(self.cleaned, index=False)

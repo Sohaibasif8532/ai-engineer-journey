@@ -1,0 +1,67 @@
+2026-02-03 17:09:45,613 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-03 17:09:45,632 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-03 17:09:45,651 - INFO - Null Values Removed from Customer ID :0 
+2026-02-03 17:09:45,684 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-03 17:09:45,727 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-03 17:10:35,519 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-03 17:10:35,537 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-03 17:10:35,556 - INFO - Null Values Removed from Customer ID :0 
+2026-02-03 17:10:35,587 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-03 17:10:35,626 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-03 17:10:46,199 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-03 17:10:46,220 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-03 17:10:46,239 - INFO - Null Values Removed from Customer ID :0 
+2026-02-03 17:10:46,269 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-03 17:10:46,311 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-03 17:11:32,515 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-03 17:11:32,534 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-03 17:11:32,552 - INFO - Null Values Removed from Customer ID :0 
+2026-02-03 17:11:32,582 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-03 17:11:32,622 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-03 17:11:32,851 - INFO - Outliers Removed using IQR Method
+2026-02-03 17:13:27,941 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-03 17:13:27,959 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-03 17:13:27,976 - INFO - Null Values Removed from Customer ID :0 
+2026-02-03 17:13:28,006 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-03 17:13:28,046 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-03 17:13:28,271 - INFO - Outliers Removed using IQR Method
