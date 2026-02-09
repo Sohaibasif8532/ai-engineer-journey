@@ -18,19 +18,23 @@ Key features of this pipeline:
 
 data/
 ├─ input/
-│ └─ input.csv # Raw dataset
+│   └─ input.csv              
 ├─ output/
-│ ├─ cleaned/
-│ │ └─ cleaned.csv # Cleaned dataset
-│ ├─ features/
-│ │ └─ features.csv # Feature-engineered dataset with target
-│ ├─ analysis/
-│ │ └─ analysis.csv # Aggregated stats / EDA results
-│ └─ visuals/ # PNG plots of distributions & boxplots
+│   ├─ cleaned/
+│   │   └─ cleaned.csv          
+│   ├─ features/
+│   │   └─ features.csv         
+│   ├─ analysis/
+│   │   └─ analysis.csv         
+│   └─ visuals/                
 logs/
-└─ logs.log # Execution logs
+└─ logs.log                      
 src/
-└─ rdcba_pipeline.py # Main pipeline class
+├─ Cleaning.py                
+├─ Feature_Engineering.py                
+├─ Exploratory_Analysis.py     
+├─ Load_Data.py                      
+└─ main.py                    
 
 
 ---
