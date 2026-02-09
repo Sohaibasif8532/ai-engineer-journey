@@ -1,8 +1,8 @@
-2026-02-03 17:09:45,613 - INFO - Null Values Removed from Transaction ID :0 
-2026-02-03 17:09:45,632 - INFO - Null Values Removed from Transaction Date :0 
-2026-02-03 17:09:45,651 - INFO - Null Values Removed from Customer ID :0 
-2026-02-03 17:09:45,684 - INFO - Null Values Removed from Transaction Status :0 
-2026-02-03 17:09:45,727 - INFO - Null Values Found : Transaction_ID        0
+2026-02-09 15:22:05,063 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 15:22:05,083 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 15:22:05,101 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 15:22:05,134 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 15:22:05,174 - INFO - Null Values Found : Transaction_ID        0
 Transaction_Date      0
 Customer_ID           0
 Product_Name          0
@@ -11,11 +11,12 @@ Price                 0
 Payment_Method        0
 Transaction_Status    0
 dtype: int64
-2026-02-03 17:10:35,519 - INFO - Null Values Removed from Transaction ID :0 
-2026-02-03 17:10:35,537 - INFO - Null Values Removed from Transaction Date :0 
-2026-02-03 17:10:35,556 - INFO - Null Values Removed from Customer ID :0 
-2026-02-03 17:10:35,587 - INFO - Null Values Removed from Transaction Status :0 
-2026-02-03 17:10:35,626 - INFO - Null Values Found : Transaction_ID        0
+2026-02-09 15:22:05,395 - INFO - Outliers Removed using IQR Method
+2026-02-09 15:22:31,525 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 15:22:31,544 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 15:22:31,562 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 15:22:31,592 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 15:22:31,633 - INFO - Null Values Found : Transaction_ID        0
 Transaction_Date      0
 Customer_ID           0
 Product_Name          0
@@ -24,11 +25,12 @@ Price                 0
 Payment_Method        0
 Transaction_Status    0
 dtype: int64
-2026-02-03 17:10:46,199 - INFO - Null Values Removed from Transaction ID :0 
-2026-02-03 17:10:46,220 - INFO - Null Values Removed from Transaction Date :0 
-2026-02-03 17:10:46,239 - INFO - Null Values Removed from Customer ID :0 
-2026-02-03 17:10:46,269 - INFO - Null Values Removed from Transaction Status :0 
-2026-02-03 17:10:46,311 - INFO - Null Values Found : Transaction_ID        0
+2026-02-09 15:22:31,858 - INFO - Outliers Removed using IQR Method
+2026-02-09 15:27:15,640 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 15:27:15,660 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 15:27:15,679 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 15:27:15,710 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 15:27:15,750 - INFO - Null Values Found : Transaction_ID        0
 Transaction_Date      0
 Customer_ID           0
 Product_Name          0
@@ -37,11 +39,7 @@ Price                 0
 Payment_Method        0
 Transaction_Status    0
 dtype: int64
-2026-02-03 17:11:32,515 - INFO - Null Values Removed from Transaction ID :0 
-2026-02-03 17:11:32,534 - INFO - Null Values Removed from Transaction Date :0 
-2026-02-03 17:11:32,552 - INFO - Null Values Removed from Customer ID :0 
-2026-02-03 17:11:32,582 - INFO - Null Values Removed from Transaction Status :0 
-2026-02-03 17:11:32,622 - INFO - Null Values Found : Transaction_ID        0
+2026-02-09 15:27:15,840 - INFO - Null Values Found : Transaction_ID        0
 Transaction_Date      0
 Customer_ID           0
 Product_Name          0
@@ -50,12 +48,12 @@ Price                 0
 Payment_Method        0
 Transaction_Status    0
 dtype: int64
-2026-02-03 17:11:32,851 - INFO - Outliers Removed using IQR Method
-2026-02-03 17:13:27,941 - INFO - Null Values Removed from Transaction ID :0 
-2026-02-03 17:13:27,959 - INFO - Null Values Removed from Transaction Date :0 
-2026-02-03 17:13:27,976 - INFO - Null Values Removed from Customer ID :0 
-2026-02-03 17:13:28,006 - INFO - Null Values Removed from Transaction Status :0 
-2026-02-03 17:13:28,046 - INFO - Null Values Found : Transaction_ID        0
+2026-02-09 15:27:16,044 - INFO - Outliers Removed using IQR Method
+2026-02-09 15:27:52,389 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 15:27:52,407 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 15:27:52,427 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 15:27:52,457 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 15:27:52,497 - INFO - Null Values Found : Transaction_ID        0
 Transaction_Date      0
 Customer_ID           0
 Product_Name          0
@@ -64,4 +62,1225 @@ Price                 0
 Payment_Method        0
 Transaction_Status    0
 dtype: int64
-2026-02-03 17:13:28,271 - INFO - Outliers Removed using IQR Method
+2026-02-09 15:27:52,585 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 15:27:52,791 - INFO - Outliers Removed using IQR Method
+2026-02-09 15:29:50,142 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 15:29:50,163 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 15:29:50,184 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 15:29:50,216 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 15:29:50,256 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 15:29:50,351 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 15:29:50,555 - INFO - Outliers Removed using IQR Method
+2026-02-09 15:29:50,755 - INFO - Target Variable Created Successfully
+2026-02-09 15:29:51,011 - INFO - Cleaned Data Saved Successfully
+2026-02-09 15:30:21,951 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 15:30:21,969 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 15:30:21,988 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 15:30:22,019 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 15:30:22,058 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 15:30:22,151 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 15:30:22,353 - INFO - Outliers Removed using IQR Method
+2026-02-09 15:30:22,552 - INFO - Target Variable Created Successfully
+2026-02-09 15:30:22,807 - INFO - Cleaned Data Saved Successfully
+2026-02-09 15:33:16,186 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 15:33:16,204 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 15:33:16,222 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 15:33:16,253 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 15:33:16,293 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 15:33:16,387 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 15:33:16,591 - INFO - Outliers Removed using IQR Method
+2026-02-09 15:33:16,797 - INFO - Target Variable Created Successfully
+2026-02-09 15:33:17,179 - INFO - Cleaned Data Saved Successfully
+2026-02-09 15:33:27,144 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 15:33:27,162 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 15:33:27,181 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 15:33:27,212 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 15:33:27,253 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 15:33:27,343 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 15:33:27,547 - INFO - Outliers Removed using IQR Method
+2026-02-09 15:33:27,750 - INFO - Target Variable Created Successfully
+2026-02-09 15:33:28,134 - INFO - Cleaned Data Saved Successfully
+2026-02-09 15:47:29,198 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 15:47:29,234 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 15:47:29,254 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 15:47:29,299 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 15:47:29,340 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 15:47:29,433 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 15:47:29,641 - INFO - Outliers Removed using IQR Method
+2026-02-09 15:47:29,847 - INFO - Target Variable Created Successfully
+2026-02-09 15:47:30,143 - INFO - Cleaned Data Saved Successfully
+2026-02-09 15:50:55,110 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 15:50:55,130 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 15:50:55,149 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 15:50:55,179 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 15:50:55,220 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 15:50:55,311 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 15:50:55,518 - INFO - Outliers Removed using IQR Method
+2026-02-09 15:50:55,723 - INFO - Target Variable Created Successfully
+2026-02-09 15:50:56,075 - INFO - Cleaned Data Saved Successfully
+2026-02-09 15:51:53,142 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 15:51:53,160 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 15:51:53,180 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 15:51:53,210 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 15:51:53,252 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 15:51:53,345 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 15:51:53,555 - INFO - Outliers Removed using IQR Method
+2026-02-09 15:51:53,760 - INFO - Target Variable Created Successfully
+2026-02-09 15:51:54,075 - INFO - Cleaned Data Saved Successfully
+2026-02-09 15:52:08,302 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 15:52:08,321 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 15:52:08,339 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 15:52:08,371 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 15:52:08,412 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 15:52:08,505 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 15:52:08,713 - INFO - Outliers Removed using IQR Method
+2026-02-09 15:52:08,916 - INFO - Target Variable Created Successfully
+2026-02-09 15:52:09,379 - INFO - Cleaned Data Saved Successfully
+2026-02-09 15:54:22,347 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 15:54:22,367 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 15:54:22,386 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 15:54:22,417 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 15:54:22,460 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 15:54:22,557 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 15:54:22,772 - INFO - Outliers Removed using IQR Method
+2026-02-09 15:54:22,985 - INFO - Target Variable Created Successfully
+2026-02-09 15:55:23,714 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 15:55:23,733 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 15:55:23,751 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 15:55:23,783 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 15:55:23,824 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 15:55:23,919 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 15:55:24,127 - INFO - Outliers Removed using IQR Method
+2026-02-09 15:55:24,329 - INFO - Target Variable Created Successfully
+2026-02-09 15:55:44,554 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 15:55:44,573 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 15:55:44,591 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 15:55:44,623 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 15:55:44,664 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 15:55:44,754 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 15:55:44,958 - INFO - Outliers Removed using IQR Method
+2026-02-09 15:55:45,160 - INFO - Target Variable Created Successfully
+2026-02-09 15:55:57,271 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 15:55:57,291 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 15:55:57,309 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 15:55:57,340 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 15:55:57,382 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 15:55:57,474 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 15:55:57,681 - INFO - Outliers Removed using IQR Method
+2026-02-09 15:55:57,889 - INFO - Target Variable Created Successfully
+2026-02-09 15:55:57,898 - INFO - Customer Total Spend Created Successfully
+2026-02-09 15:55:58,280 - INFO - Cleaned Data Saved Successfully
+2026-02-09 16:20:44,234 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 16:20:44,253 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 16:20:44,273 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 16:20:44,308 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 16:20:44,349 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 16:20:44,442 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 16:20:44,666 - INFO - Outliers Removed using IQR Method
+2026-02-09 16:22:20,746 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 16:22:20,764 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 16:22:20,782 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 16:22:20,812 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 16:22:20,852 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 16:22:20,940 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 16:22:21,137 - INFO - Outliers Removed using IQR Method
+2026-02-09 16:22:41,845 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 16:22:41,863 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 16:22:41,881 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 16:22:41,911 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 16:22:41,950 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 16:22:42,038 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 16:22:42,233 - INFO - Outliers Removed using IQR Method
+2026-02-09 16:23:03,891 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 16:23:03,909 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 16:23:03,928 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 16:23:03,958 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 16:23:03,997 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 16:23:04,086 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 16:23:04,282 - INFO - Outliers Removed using IQR Method
+2026-02-09 16:24:21,701 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 16:24:21,719 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 16:24:21,737 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 16:24:21,767 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 16:24:21,807 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 16:24:21,894 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 16:24:22,091 - INFO - Outliers Removed using IQR Method
+2026-02-09 16:24:38,241 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 16:24:38,259 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 16:24:38,277 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 16:24:38,307 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 16:24:38,346 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 16:24:38,438 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 16:24:38,631 - INFO - Outliers Removed using IQR Method
+2026-02-09 16:24:38,870 - INFO - Target Variable Created Successfully
+2026-02-09 16:24:38,885 - INFO - Customer Total Spend Created Successfully
+2026-02-09 16:24:46,734 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 16:24:46,752 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 16:24:46,770 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 16:24:46,799 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 16:24:46,839 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 16:24:46,927 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 16:24:47,134 - INFO - Outliers Removed using IQR Method
+2026-02-09 16:24:47,345 - INFO - Target Variable Created Successfully
+2026-02-09 16:24:47,354 - INFO - Customer Total Spend Created Successfully
+2026-02-09 16:25:34,604 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 16:25:34,622 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 16:25:34,640 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 16:25:34,670 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 16:25:34,711 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 16:25:34,801 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 16:25:34,999 - INFO - Outliers Removed using IQR Method
+2026-02-09 16:25:35,195 - INFO - Target Variable Created Successfully
+2026-02-09 16:25:35,203 - INFO - Customer Total Spend Created Successfully
+2026-02-09 16:25:35,559 - INFO - Cleaned Data Saved Successfully
+2026-02-09 16:38:34,477 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 16:38:34,495 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 16:38:34,513 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 16:38:34,543 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 16:38:34,583 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 16:38:34,681 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 16:38:34,881 - INFO - Outliers Removed using IQR Method
+2026-02-09 16:38:35,090 - INFO - Target Variable Created Successfully
+2026-02-09 16:38:35,108 - INFO - Customer Total Spend Created Successfully
+2026-02-09 16:38:53,025 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 16:38:53,043 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 16:38:53,061 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 16:38:53,091 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 16:38:53,130 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 16:38:53,228 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 16:38:53,432 - INFO - Outliers Removed using IQR Method
+2026-02-09 16:38:53,639 - INFO - Target Variable Created Successfully
+2026-02-09 16:38:53,658 - INFO - Customer Total Spend Created Successfully
+2026-02-09 16:39:35,358 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 16:39:35,376 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 16:39:35,395 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 16:39:35,426 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 16:39:35,466 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 16:39:35,565 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 16:39:35,768 - INFO - Outliers Removed using IQR Method
+2026-02-09 16:40:50,676 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 16:40:50,694 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 16:40:50,712 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 16:40:50,741 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 16:40:50,781 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 16:40:50,878 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 16:40:51,077 - INFO - Outliers Removed using IQR Method
+2026-02-09 16:45:17,232 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 16:45:17,250 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 16:45:17,269 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 16:45:17,298 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 16:45:17,339 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 16:45:17,434 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 16:45:17,638 - INFO - Outliers Removed using IQR Method
+2026-02-09 16:45:17,853 - INFO - Target Variable Created Successfully
+2026-02-09 16:45:17,872 - INFO - Customer Total Spend Created Successfully
+2026-02-09 16:45:18,233 - INFO - Data Saved Successfully to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\cleaned\cleaned.csv
+2026-02-09 16:45:46,671 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 16:45:46,691 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 16:45:46,709 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 16:45:46,740 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 16:45:46,781 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 16:45:46,881 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 16:45:47,089 - INFO - Outliers Removed using IQR Method
+2026-02-09 16:45:47,319 - INFO - Target Variable Created Successfully
+2026-02-09 16:45:47,337 - INFO - Customer Total Spend Created Successfully
+2026-02-09 16:45:47,764 - INFO - Data Saved Successfully to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\cleaned\cleaned.csv
+2026-02-09 16:47:15,865 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 16:47:15,884 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 16:47:15,902 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 16:47:15,931 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 16:47:15,971 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 16:47:16,065 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 16:47:16,269 - INFO - Outliers Removed using IQR Method
+2026-02-09 16:47:16,482 - INFO - Target Variable Created Successfully
+2026-02-09 16:47:16,501 - INFO - Customer Total Spend Created Successfully
+2026-02-09 16:47:16,867 - INFO - Data Saved Successfully to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\cleaned\cleaned.csv
+2026-02-09 16:48:07,461 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 16:48:07,481 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 16:48:07,500 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 16:48:07,530 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 16:48:07,570 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 16:48:07,668 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 16:48:07,876 - INFO - Outliers Removed using IQR Method
+2026-02-09 16:48:08,092 - INFO - Target Variable Created Successfully
+2026-02-09 16:48:08,109 - INFO - Customer Total Spend Created Successfully
+2026-02-09 16:51:03,290 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 16:51:03,309 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 16:51:03,327 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 16:51:03,361 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 16:51:03,405 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 16:51:03,515 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 16:51:03,724 - INFO - Outliers Removed using IQR Method
+2026-02-09 16:51:03,938 - INFO - Target Variable Created Successfully
+2026-02-09 16:51:03,956 - INFO - Customer Total Spend Created Successfully
+2026-02-09 16:51:04,333 - INFO - Data (final) saved to: e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\cleaned\cleaned.csv
+2026-02-09 16:52:20,442 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 16:52:20,461 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 16:52:20,478 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 16:52:20,508 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 16:52:20,547 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 16:52:20,645 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 16:52:20,849 - INFO - Outliers Removed using IQR Method
+2026-02-09 16:52:21,068 - INFO - Target Variable Created Successfully
+2026-02-09 16:52:21,087 - INFO - Customer Total Spend Created Successfully
+2026-02-09 16:52:46,385 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 16:52:46,404 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 16:52:46,424 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 16:52:46,455 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 16:52:46,496 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 16:52:46,592 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 16:52:46,799 - INFO - Outliers Removed using IQR Method
+2026-02-09 16:52:47,027 - INFO - Target Variable Created Successfully
+2026-02-09 16:52:47,046 - INFO - Customer Total Spend Created Successfully
+2026-02-09 16:54:41,498 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 16:54:41,516 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 16:54:41,535 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 16:54:41,564 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 16:54:41,604 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 16:54:41,701 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 16:54:41,904 - INFO - Outliers Removed using IQR Method
+2026-02-09 16:54:42,110 - INFO - Target Variable Created Successfully
+2026-02-09 16:54:42,128 - INFO - Customer Total Spend Created Successfully
+2026-02-09 16:54:42,671 - INFO - Data (Customer Total Spend) saved to: e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\features\features.csv
+2026-02-09 16:57:09,428 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 16:57:09,447 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 16:57:09,464 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 16:57:09,494 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 16:57:09,534 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 16:57:38,890 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 16:57:38,908 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 16:57:38,926 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 16:57:38,957 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 16:57:38,997 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 16:57:39,095 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 16:57:39,297 - INFO - Outliers Removed using IQR Method
+2026-02-09 16:57:39,514 - INFO - Target Variable Created Successfully
+2026-02-09 16:57:39,533 - INFO - Customer Total Spend Created Successfully
+2026-02-09 16:57:39,912 - INFO - Data (Customer Total Spend) saved to: e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\features\features.csv
+2026-02-09 17:01:55,104 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 17:01:55,124 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 17:01:55,143 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 17:01:55,172 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 17:01:55,212 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 17:01:55,309 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 17:01:55,514 - INFO - Outliers Removed using IQR Method
+2026-02-09 17:01:55,730 - INFO - Target Variable Created Successfully
+2026-02-09 17:01:55,749 - INFO - Customer Total Spend Created Successfully
+2026-02-09 17:03:05,254 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 17:03:05,272 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 17:03:05,290 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 17:03:05,319 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 17:03:05,360 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 17:03:05,456 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 17:03:05,666 - INFO - Outliers Removed using IQR Method
+2026-02-09 17:03:05,882 - INFO - Target Variable Created Successfully
+2026-02-09 17:03:05,922 - INFO - Customer Total Spend Created Successfully
+2026-02-09 17:03:06,485 - INFO - Data (Customer Total Spend) saved to: e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\features\features.csv
+2026-02-09 17:04:05,064 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 17:04:05,082 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 17:04:05,101 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 17:04:05,131 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 17:04:05,172 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 17:04:05,278 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 17:04:05,492 - INFO - Outliers Removed using IQR Method
+2026-02-09 17:04:05,724 - INFO - Target Variable Created Successfully
+2026-02-09 17:04:05,748 - INFO - Customer Total Spend Created Successfully
+2026-02-09 17:04:05,871 - INFO - Data (Customer Total Spend) saved to: e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\features\features.csv
+2026-02-09 17:07:54,405 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 17:07:54,424 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 17:07:54,442 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 17:07:54,473 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 17:07:54,514 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 17:07:54,613 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 17:07:54,819 - INFO - Outliers Removed using IQR Method
+2026-02-09 17:07:55,035 - INFO - Target Variable Created Successfully
+2026-02-09 17:07:55,047 - INFO - Customer Total Spend Created Successfully
+2026-02-09 17:07:55,167 - INFO - Data (Customer Total Spend) saved to: e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\features\features.csv
+2026-02-09 17:08:13,404 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 17:08:13,422 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 17:08:13,441 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 17:08:13,470 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 17:08:13,509 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 17:08:13,607 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 17:08:13,810 - INFO - Outliers Removed using IQR Method
+2026-02-09 17:08:14,019 - INFO - Target Variable Created Successfully
+2026-02-09 17:08:14,029 - INFO - Customer Total Spend Created Successfully
+2026-02-09 17:08:14,146 - INFO - Data (Customer Total Spend) saved to: e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\features\features.csv
+2026-02-09 17:11:36,540 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 17:11:36,558 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 17:11:36,576 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 17:11:36,607 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 17:11:36,646 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 17:13:06,412 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 17:13:06,431 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 17:13:06,451 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 17:13:06,692 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\cleaned\cleaned.csv
+2026-02-09 17:13:06,701 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 17:13:06,743 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 17:13:06,986 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\cleaned\cleaned.csv
+2026-02-09 17:19:02,417 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 17:19:02,437 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 17:19:02,456 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 17:19:02,704 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\cleaned\cleaned.csv
+2026-02-09 17:19:02,714 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 17:19:02,755 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 17:19:02,997 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\cleaned\cleaned.csv
+2026-02-09 17:19:03,534 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\features\features.csv
+2026-02-09 17:19:04,016 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\features\features.csv
+2026-02-09 17:20:04,437 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 17:20:04,467 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 17:20:04,497 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 17:20:04,855 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\cleaned\cleaned.csv
+2026-02-09 17:20:04,868 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 17:20:04,938 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 17:20:05,322 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\cleaned\cleaned.csv
+2026-02-09 17:20:05,475 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\features\features.csv
+2026-02-09 17:20:06,448 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\features\features.csv
+2026-02-09 17:26:13,230 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 17:26:13,247 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 17:26:13,264 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 17:26:13,294 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 17:26:13,332 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 17:26:13,575 - INFO - Data Saved to E:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\cleaned\cleaned.csv
+2026-02-09 17:26:14,059 - INFO - Data Saved to E:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\features\features.csv
+2026-02-09 17:27:14,823 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 17:27:14,841 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 17:27:14,860 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 17:27:14,891 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 17:27:14,931 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 17:27:15,175 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\cleaned\cleaned.csv
+2026-02-09 17:27:15,666 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\features\features.csv
+2026-02-09 17:29:54,572 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 17:29:54,590 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 17:29:54,609 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 17:29:54,641 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 17:29:54,682 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 17:29:54,932 - INFO - Data Saved to E:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\cleaned\cleaned.csv
+2026-02-09 17:29:55,166 - INFO - Data Saved to E:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\features\features.csv
+2026-02-09 17:30:03,091 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 17:30:03,110 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 17:30:03,129 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 17:30:03,164 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 17:30:03,204 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 17:30:03,499 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\cleaned\cleaned.csv
+2026-02-09 17:30:03,742 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\features\features.csv
+2026-02-09 17:30:48,382 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 17:30:48,400 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 17:30:48,418 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 17:30:48,449 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 17:30:48,488 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 17:30:48,814 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\cleaned\cleaned.csv
+2026-02-09 17:30:49,034 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\features\features.csv
+2026-02-09 17:31:55,733 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 17:31:55,751 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 17:31:55,769 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 17:31:55,799 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 17:31:55,839 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 17:31:56,089 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\cleaned\cleaned.csv
+2026-02-09 17:31:56,334 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\features\features.csv
+2026-02-09 17:32:19,919 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 17:32:19,937 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 17:32:19,955 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 17:32:19,985 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 17:32:20,025 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 17:32:20,277 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\cleaned\cleaned.csv
+2026-02-09 17:32:20,730 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\features\features.csv
+2026-02-09 17:41:46,773 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 17:41:46,791 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 17:41:46,810 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 17:41:46,839 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 17:41:46,880 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 17:41:47,234 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\cleaned\cleaned.csv
+2026-02-09 17:41:47,836 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\features\features.csv
+2026-02-09 17:46:39,368 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 17:46:39,386 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 17:46:39,404 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 17:46:39,434 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 17:46:39,475 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 17:46:39,733 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\cleaned\cleaned.csv
+2026-02-09 17:47:05,150 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 17:47:05,168 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 17:47:05,187 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 17:47:05,217 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 17:47:05,257 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 17:47:05,513 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\cleaned\cleaned.csv
+2026-02-09 17:47:06,434 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\features\features.csv
+2026-02-09 17:48:33,225 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 17:48:33,244 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 17:48:33,262 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 17:48:33,294 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 17:48:33,333 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 17:48:33,586 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\cleaned\cleaned.csv
+2026-02-09 17:50:15,417 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 17:50:15,435 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 17:50:15,457 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 17:50:15,490 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 17:50:15,530 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 17:50:15,781 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\cleaned\cleaned.csv
+2026-02-09 17:51:01,210 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 17:51:01,229 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 17:51:01,247 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 17:51:01,278 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 17:51:01,319 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 17:51:01,567 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\cleaned\cleaned.csv
+2026-02-09 17:51:02,149 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\features\features.csv

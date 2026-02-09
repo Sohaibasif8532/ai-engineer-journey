@@ -12,8 +12,9 @@ projectroot=os.path.dirname(filedir)
 inputdata=os.path.join(projectroot,"data","input","input.csv")
 cleaned=os.path.join(projectroot,"data","output","cleaned","cleaned.csv")
 analysis=os.path.join(projectroot,"data","output","analysis","analysis.csv")
-featured=os.path.join(projectroot,"data","output","featured","featured.csv")
+featured=os.path.join(projectroot,"data","output","features","features.csv")
 logfiles=os.path.join(projectroot,"logs","logs.log")
+
 
 
 class RDCBA:
@@ -23,6 +24,7 @@ class RDCBA:
         self.analysis=analysis
         self.featured=featured
         self.logfiles=logfiles
+        self.snapshots={}
 
         logging.basicConfig(
             filename=self.logfiles,
@@ -52,11 +54,9 @@ class RDCBA:
         if duplicateValues>0:
             print("Data Contains Duplicate Values")
             self.RemoveDuplicates()
-            
-            
         
-    
     def CleanNullValues(self):
+        self.snapshots["Before Cleaning Null Values"]=self.df.copy()
         
         if self.df["Transaction_ID"].isnull().any():
             self.df["Transaction_ID"].ffill(inplace=True)
@@ -100,7 +100,6 @@ class RDCBA:
         print("\n")
 
     def IQR(self):
-
         cols= ["Price", "Quantity"]
         self.df[["Price", "Quantity"]] = self.df[["Price", "Quantity"]].apply(
             lambda x: pd.to_numeric(x.astype(str).str.replace(r"[^\d.]", "", regex=True), errors="coerce")
@@ -114,20 +113,59 @@ class RDCBA:
         mask = ~((self.df[["Price", "Quantity"]] < lower_bound) | (self.df[["Price", "Quantity"]] > upper_bound)).any(axis=1)
         self.df = self.df[mask]
         print(f"Removed Outliers using IQR Method")
-        logging.info(f"Outliers Removed using IQR Method")
+
+    def removespecial(self):
+        self.df["Price"]=self.df["Price"].astype(str).str.replace(r"[^\d.]", "", regex=True)
+        self.df["Quantity"]=self.df["Quantity"].astype(str).str.replace(r"[^\d.]", "", regex=True)
+        self.df["Price"] = pd.to_numeric(self.df["Price"], errors="coerce")
+        self.df["Quantity"] = pd.to_numeric(self.df["Quantity"], errors="coerce")                               
+
+            
+    def TargetVariable(self):
+        # Ensure Price is numeric
+        self.df["Price"] = pd.to_numeric(self.df["Price"].astype(str).str.replace(r"[^\d.]", "", regex=True), errors="coerce")
+
+        self.df["High Value Transaction"]= (self.df["Price"]>500).astype(int)
         
+        self.df["Repeating Customer"]= (self.df["Transaction_ID"].duplicated()).astype(int)
     
-    def saveCleanedData(self):
-        self.df.to_csv(self.cleaned, index=False)
-        print("Cleaned Data Saved Successfully")
-        logging.info("Cleaned Data Saved Successfully")
+    def Customer_total_spend(self):
+        self.df["Customer Total Spend"]= self.df.groupby("Customer_ID")["Price"].transform("sum")
+
+    def AverageOrderValue(self):
+        self.df["Average Order Value"]= self.df.groupby("Customer_ID")["Price"].transform("mean")
+    
+    def PurchaseFrequency(self):
+        self.df["Purchase Frequency"]= self.df.groupby("Customer_ID")["Transaction_Date"].transform("count")
+    
+    def PurchaseRecency(self):
+        self.df["Transaction_Date"] = pd.to_datetime(self.df["Transaction_Date"], errors="coerce")
+        ref_date = self.df["Transaction_Date"].max()
+        self.df["LastPurchase"]= self.df.groupby("Customer_ID")["Transaction_Date"].transform("max")
+        self.df["Purchase Recency"]= (ref_date - self.df["LastPurchase"]).dt.days
 
 
     
+    def save_data(self, file_path, columns=None):
+        if columns:
+            self.df[columns].to_csv(file_path, index=False)
+        else:
+            self.df.to_csv(file_path, index=False)
+        logging.info(f"Data Saved to {file_path}")
+        print(f"Data Saved to {file_path}")
+
+
+
 
 
 
 app=RDCBA(inputdata, cleaned, analysis, featured, logfiles)
 app.loadData()
 app.validate_data()
-app.IQR()
+app.save_data(app.cleaned) 
+app.TargetVariable()
+app.Customer_total_spend()
+app.AverageOrderValue()
+app.PurchaseFrequency()
+app.PurchaseRecency()
+app.save_data(app.featured, columns=["Customer_ID","Transaction_ID","High Value Transaction", "Repeating Customer", "Customer Total Spend", "Average Order Value", "Purchase Frequency", "Purchase Recency"]) 
