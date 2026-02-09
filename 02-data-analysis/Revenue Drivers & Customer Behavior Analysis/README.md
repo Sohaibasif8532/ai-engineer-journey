@@ -155,3 +155,11 @@ app.save_data(app.analysis)   # Save analysis results
 ## Summary
 
 This pipeline combines efficiency with robustness, making it ideal for retail analytics and ML-ready preprocessing. Its dynamic function calling system ensures only necessary operations are performed, drastically reducing execution time and system resource usage, while producing clean, feature-rich datasets and insightful analysis.
+
+### Author
+
+**Sohaib Asif**
+Bachelor in Artificial Intelligence | Data Enthusiast
+
+GitHub: https://github.com/Sohaibasif8532
+LinkedIn: https://www.linkedin.com/in/sohaib-asif-28389627b/
