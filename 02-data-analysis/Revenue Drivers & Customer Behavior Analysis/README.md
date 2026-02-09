@@ -15,7 +15,7 @@ Key features of this pipeline:
 ---
 
 ## Project Structure
-
+```bash
 data/
 ├─ input/
 │ └─ input.csv # Raw dataset
@@ -31,7 +31,7 @@ logs/
 └─ logs.log # Execution logs
 src/
 └─ rdcba_pipeline.py # Main pipeline class
-
+```
 
 
 ---
