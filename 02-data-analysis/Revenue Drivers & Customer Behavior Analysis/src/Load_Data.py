@@ -20,7 +20,7 @@ class Dataloader:
         self.analysis=analysis
         self.visuals=visuals
         self.snapshots={}
-
+ 
         logging.basicConfig(
             filename=self.logfiles,
             level=logging.INFO,
