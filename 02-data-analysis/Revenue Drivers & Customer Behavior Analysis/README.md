@@ -33,12 +33,11 @@ src/
 └─ rdcba_pipeline.py # Main pipeline class
 
 
-
 ---
 
 ## Key Pipeline Steps
 
-### **Step 1 — Data Validation & Cleaning**
+### Step 1 — Data Validation & Cleaning
 - Loads the raw CSV dataset.
 - Validates schema and checks for nulls or duplicates.
 - Cleans nulls with explicit strategies (`ffill`, `dropna`, default values).
@@ -54,7 +53,7 @@ Each cleaning function executes **only if required**. For example:
 
 ---
 
-### **Step 2 — Target Variable Creation**
+### Step 2 — Target Variable Creation
 - Creates **High Value Transaction** (`Price > 500`)  
 - Creates **Repeating Customer** (`purchase count > 1`)  
 - Thresholds can be justified and logged.  
@@ -63,7 +62,7 @@ Each cleaning function executes **only if required**. For example:
 
 ---
 
-### **Step 3 — Feature Engineering**
+### Step 3 — Feature Engineering
 - **Customer Total Spend**  
 - **Average Order Value**  
 - **Purchase Frequency**  
@@ -73,7 +72,7 @@ Each cleaning function executes **only if required**. For example:
 
 ---
 
-### **Step 4 — Exploratory Data Analysis (EDA)**
+### Step 4 — Exploratory Data Analysis (EDA)
 - Generates **correlation matrix** for numeric features.
 - Distribution checks via **histograms** and **boxplots**.
 - Saves all charts as PNG in `data/output/visuals/`.
@@ -81,7 +80,7 @@ Each cleaning function executes **only if required**. For example:
 
 ---
 
-### **Step 5 — Business Insights**
+### Step 5 — Business Insights
 - Aggregates to answer:
   - Which customer segments drive most revenue?  
   - Repeat vs non-repeat customer behavior patterns.  
@@ -129,29 +128,3 @@ app.save_data(app.featured, columns=[
 
 app.ExploratoryAnalysis()     # EDA + save charts
 app.save_data(app.analysis)   # Save analysis results
-
-
-## Logging
-
-- **All actions are logged in logs/logs.log, including:**
-
-- Null removal
-
-- Duplicate removal
-
-- Feature calculations
-
-- Target variable creation
-
-- Aggregation summaries
-
-- Data saves
-
-## Requirements
-
-- Python ≥ 3.9
-- pandas, numpy, matplotlib, seaborn, logging, os
-
-## Summary
-
-This pipeline combines efficiency with robustness, making it ideal for retail analytics and ML-ready preprocessing. Its dynamic function calling system ensures only necessary operations are performed, drastically reducing execution time and system resource usage, while producing clean, feature-rich datasets and insightful analysis.
