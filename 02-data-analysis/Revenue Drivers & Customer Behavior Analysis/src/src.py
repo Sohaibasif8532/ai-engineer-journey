@@ -12,16 +12,20 @@ projectroot=os.path.dirname(filedir)
 inputdata=os.path.join(projectroot,"data","input","input.csv")
 cleaned=os.path.join(projectroot,"data","output","cleaned","cleaned.csv")
 featured=os.path.join(projectroot,"data","output","features","features.csv")
+analysis=os.path.join(projectroot,"data","output","analysis","analysis.csv")
 logfiles=os.path.join(projectroot,"logs","logs.log")
+visuals=os.path.join(projectroot,"data","output","visuals")
 
 
 
 class RDCBA:
-    def __init__(self, inputdata, cleaned, featured, logfiles):
+    def __init__(self, inputdata, cleaned, featured, logfiles, analysis, visuals):
         self.inputdata=inputdata
         self.cleaned=cleaned
         self.featured=featured
         self.logfiles=logfiles
+        self.analysis=analysis
+        self.visuals=visuals
         self.snapshots={}
 
         logging.basicConfig(
@@ -68,7 +72,7 @@ class RDCBA:
             logging.info(f"Null Values Removed from Customer ID :{self.df['Customer_ID'].isnull().sum()} ")
            
         if self.df["Product_Name"].isnull().any():
-            self.df["Product_Name"].dropna(inplace=True)
+            self.df.dropna(subset=["Product_Name"], inplace=True)
             logging.info(f"Null Values Removed from Product Name :{self.df['Product_Name'].isnull().sum()} ")
             
             
@@ -113,16 +117,17 @@ class RDCBA:
         print(f"Removed Outliers using IQR Method")
 
     def removespecial(self):
-        self.df["Price"]=self.df["Price"].astype(str).str.replace(r"[^\d.]", "", regex=True)
-        self.df["Quantity"]=self.df["Quantity"].astype(str).str.replace(r"[^\d.]", "", regex=True)
         self.df["Price"] = pd.to_numeric(self.df["Price"], errors="coerce")
         self.df["Quantity"] = pd.to_numeric(self.df["Quantity"], errors="coerce")                               
 
+    def CleanNumericColumns(self):
+        for col in ["Price","Quantity"]:
+            self.df[col] = pd.to_numeric(
+                self.df[col].astype(str).str.replace(r"[^\d.]", "", regex=True),
+                errors="coerce"
+            )
             
     def TargetVariable(self):
-        # Ensure Price is numeric
-        self.df["Price"] = pd.to_numeric(self.df["Price"].astype(str).str.replace(r"[^\d.]", "", regex=True), errors="coerce")
-
         self.df["High Value Transaction"]= (self.df["Price"]>500).astype(int)
         
         counts = self.df.groupby("Customer_ID")["Transaction_ID"].transform("count")
@@ -151,15 +156,44 @@ class RDCBA:
         self.df["Category Diversity"]= self.df.groupby("Customer_ID")["Product_Name"].transform("nunique")
         logging.info("Category Diversity Calculated")
 
+    def ExploratoryAnalysis(self):
+        numeric_cols = self.df.select_dtypes(include='number').columns.tolist()
+        corrmatix=self.df[numeric_cols].corr()
+        print(corrmatix)
+
+        for col in numeric_cols:
+            if col in self.df.columns:
+                self.df[col].hist(bins=30)
+                plt.title(col)
+                plt.savefig(os.path.join(visuals,f"{col}_histogram.png"))
+                plt.tight_layout()
+                plt.show()
+
+                plt.figure(figsize=(10,6))
+                sns.boxplot(x=self.df[col])
+                plt.title(col)
+                plt.savefig(os.path.join(visuals,f"{col}_boxplot.png"))
+                plt.show()
+                
+
+
+
     def Aggregations(self, threshold=900):
-        customer_spend = self.df.groupby("Customer_ID")["Price"].max().reset_index()
+        customer_spend = self.df.groupby("Customer_ID")["Price"].sum().reset_index()
         customer_spend["High/Low Value Customers"] = customer_spend["Price"].apply(
             lambda x: "High Value Customer" if x > threshold else "Low Value Customer"
         )
-        logging.info("Customer Total Spend Calculated")
-        
-        # Merge back into main df
+        MostRevenueSegment = customer_spend.groupby("High/Low Value Customers")["Price"].sum().reset_index().sort_values(by="Price", ascending=False).head(1)
+        MostRevenueSegment.columns = ["High/Low Value Customers", "Most Revenue Segment"]
+
         self.df = self.df.merge(customer_spend[["Customer_ID","High/Low Value Customers"]], on="Customer_ID", how="left")
+        self.df = self.df.merge(MostRevenueSegment, on="High/Low Value Customers", how="left")
+
+        repeatingBehavior = self.df.groupby("Repeating Customer")["Price"].mean().reset_index()
+        repeatingBehavior.columns = ["Repeating Customer", "Repeating Behavior Pattern"]
+        
+        self.df = self.df.merge(repeatingBehavior, on="Repeating Customer", how="left")
+
 
     def save_data(self, file_path, columns=None):
         if columns:
@@ -171,15 +205,18 @@ class RDCBA:
 
 
 
-app=RDCBA(inputdata, cleaned, featured, logfiles)
+app=RDCBA(inputdata, cleaned, featured, logfiles, analysis, visuals)
 app.loadData()
 app.validate_data()
 app.save_data(app.cleaned) 
+app.CleanNumericColumns()
 app.TargetVariable()
 app.Customer_total_spend()
 app.AverageOrderValue()
 app.PurchaseFrequency()
 app.PurchaseRecency()
 app.CategoryDiversity()
-app.Aggregations()
-app.save_data(app.featured, columns=["Customer_ID","Transaction_ID","High Value Transaction", "Repeating Customer", "Customer Total Spend", "Average Order Value", "Purchase Frequency", "Purchase Recency", "Category Diversity","High/Low Value Customers"]) 
+app.Aggregations(threshold=900)
+app.save_data(app.featured, columns=["Customer_ID","Transaction_ID","High Value Transaction", "Repeating Customer", "Customer Total Spend", "Average Order Value", "Purchase Frequency", "Purchase Recency", "Category Diversity","High/Low Value Customers","Most Revenue Segment","Repeating Behavior Pattern"]) 
+app.ExploratoryAnalysis()
+app.save_data(app.analysis)

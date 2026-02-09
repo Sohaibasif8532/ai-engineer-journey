@@ -1982,3 +1982,503 @@ dtype: int64
 2026-02-09 18:56:31,404 - INFO - Category Diversity Calculated
 2026-02-09 18:56:31,413 - INFO - Customer Total Spend Calculated
 2026-02-09 18:56:31,907 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\features\features.csv
+2026-02-09 18:59:48,926 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 18:59:48,944 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 18:59:48,963 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 18:59:48,995 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 18:59:49,036 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 18:59:49,374 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\cleaned\cleaned.csv
+2026-02-09 18:59:49,501 - INFO - Customer Total Spend Calculated
+2026-02-09 18:59:49,535 - INFO - Average Order Value Calculated
+2026-02-09 18:59:49,546 - INFO - Purchase Frequency Calculated
+2026-02-09 18:59:49,657 - INFO - Purchase Recency Calculated
+2026-02-09 18:59:49,691 - INFO - Category Diversity Calculated
+2026-02-09 18:59:50,343 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\features\features.csv
+2026-02-09 19:02:05,824 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 19:02:05,844 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 19:02:05,864 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 19:02:05,960 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 19:02:06,003 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 19:02:06,374 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\cleaned\cleaned.csv
+2026-02-09 19:02:06,515 - INFO - Customer Total Spend Calculated
+2026-02-09 19:02:06,524 - INFO - Average Order Value Calculated
+2026-02-09 19:02:06,539 - INFO - Purchase Frequency Calculated
+2026-02-09 19:02:06,564 - INFO - Purchase Recency Calculated
+2026-02-09 19:02:06,580 - INFO - Category Diversity Calculated
+2026-02-09 19:02:07,518 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\features\features.csv
+2026-02-09 19:05:22,485 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 19:05:22,503 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 19:05:22,521 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 19:05:22,550 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 19:05:22,591 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 19:05:22,836 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\cleaned\cleaned.csv
+2026-02-09 19:05:22,938 - INFO - Customer Total Spend Calculated
+2026-02-09 19:05:22,946 - INFO - Average Order Value Calculated
+2026-02-09 19:05:22,955 - INFO - Purchase Frequency Calculated
+2026-02-09 19:05:22,977 - INFO - Purchase Recency Calculated
+2026-02-09 19:05:22,989 - INFO - Category Diversity Calculated
+2026-02-09 19:05:58,127 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 19:05:58,146 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 19:05:58,164 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 19:05:58,194 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 19:05:58,234 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 19:05:58,486 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\cleaned\cleaned.csv
+2026-02-09 19:05:58,613 - INFO - Customer Total Spend Calculated
+2026-02-09 19:05:58,621 - INFO - Average Order Value Calculated
+2026-02-09 19:05:58,631 - INFO - Purchase Frequency Calculated
+2026-02-09 19:05:58,652 - INFO - Purchase Recency Calculated
+2026-02-09 19:05:58,665 - INFO - Category Diversity Calculated
+2026-02-09 19:07:30,802 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 19:07:30,820 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 19:07:30,838 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 19:07:30,868 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 19:07:30,908 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 19:07:31,257 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\cleaned\cleaned.csv
+2026-02-09 19:07:31,362 - INFO - Customer Total Spend Calculated
+2026-02-09 19:07:31,371 - INFO - Average Order Value Calculated
+2026-02-09 19:07:31,381 - INFO - Purchase Frequency Calculated
+2026-02-09 19:07:31,403 - INFO - Purchase Recency Calculated
+2026-02-09 19:07:31,418 - INFO - Category Diversity Calculated
+2026-02-09 19:08:02,399 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 19:08:02,418 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 19:08:02,436 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 19:08:02,466 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 19:08:02,507 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 19:08:02,754 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\cleaned\cleaned.csv
+2026-02-09 19:08:02,857 - INFO - Customer Total Spend Calculated
+2026-02-09 19:08:02,865 - INFO - Average Order Value Calculated
+2026-02-09 19:08:02,875 - INFO - Purchase Frequency Calculated
+2026-02-09 19:08:02,897 - INFO - Purchase Recency Calculated
+2026-02-09 19:08:02,909 - INFO - Category Diversity Calculated
+2026-02-09 19:08:37,511 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 19:08:37,529 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 19:08:37,548 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 19:08:37,577 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 19:08:37,618 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 19:08:37,865 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\cleaned\cleaned.csv
+2026-02-09 19:08:37,966 - INFO - Customer Total Spend Calculated
+2026-02-09 19:08:37,974 - INFO - Average Order Value Calculated
+2026-02-09 19:08:37,983 - INFO - Purchase Frequency Calculated
+2026-02-09 19:08:38,005 - INFO - Purchase Recency Calculated
+2026-02-09 19:08:38,018 - INFO - Category Diversity Calculated
+2026-02-09 19:08:38,168 - INFO - Aggregations calculated successfully
+2026-02-09 19:08:50,227 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 19:08:50,246 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 19:08:50,267 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 19:08:50,299 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 19:08:50,340 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 19:08:50,591 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\cleaned\cleaned.csv
+2026-02-09 19:08:50,696 - INFO - Customer Total Spend Calculated
+2026-02-09 19:08:50,704 - INFO - Average Order Value Calculated
+2026-02-09 19:08:50,714 - INFO - Purchase Frequency Calculated
+2026-02-09 19:08:50,736 - INFO - Purchase Recency Calculated
+2026-02-09 19:08:50,749 - INFO - Category Diversity Calculated
+2026-02-09 19:10:14,555 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 19:10:14,573 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 19:10:14,592 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 19:10:14,621 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 19:10:14,662 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 19:10:14,915 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\cleaned\cleaned.csv
+2026-02-09 19:10:15,017 - INFO - Customer Total Spend Calculated
+2026-02-09 19:10:15,025 - INFO - Average Order Value Calculated
+2026-02-09 19:10:15,035 - INFO - Purchase Frequency Calculated
+2026-02-09 19:10:15,059 - INFO - Purchase Recency Calculated
+2026-02-09 19:10:15,072 - INFO - Category Diversity Calculated
+2026-02-09 19:10:15,311 - INFO - Aggregations calculated successfully
+2026-02-09 19:11:41,628 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 19:11:41,647 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 19:11:41,666 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 19:11:41,695 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 19:11:41,735 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 19:11:42,073 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\cleaned\cleaned.csv
+2026-02-09 19:11:42,184 - INFO - Customer Total Spend Calculated
+2026-02-09 19:11:42,191 - INFO - Average Order Value Calculated
+2026-02-09 19:11:42,201 - INFO - Purchase Frequency Calculated
+2026-02-09 19:11:42,224 - INFO - Purchase Recency Calculated
+2026-02-09 19:11:42,236 - INFO - Category Diversity Calculated
+2026-02-09 19:15:25,008 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 19:15:25,029 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 19:15:25,046 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 19:15:25,077 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 19:15:25,119 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 19:15:25,394 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\cleaned\cleaned.csv
+2026-02-09 19:15:25,493 - INFO - Customer Total Spend Calculated
+2026-02-09 19:15:25,501 - INFO - Average Order Value Calculated
+2026-02-09 19:15:25,511 - INFO - Purchase Frequency Calculated
+2026-02-09 19:15:25,533 - INFO - Purchase Recency Calculated
+2026-02-09 19:15:25,545 - INFO - Category Diversity Calculated
+2026-02-09 19:15:26,377 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\features\features.csv
+2026-02-09 19:19:54,561 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 19:19:54,579 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 19:19:54,597 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 19:19:54,629 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 19:19:54,669 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 19:19:54,916 - INFO - Data Saved to E:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\cleaned\cleaned.csv
+2026-02-09 19:19:55,022 - INFO - Customer Total Spend Calculated
+2026-02-09 19:19:55,030 - INFO - Average Order Value Calculated
+2026-02-09 19:19:55,040 - INFO - Purchase Frequency Calculated
+2026-02-09 19:19:55,064 - INFO - Purchase Recency Calculated
+2026-02-09 19:19:55,078 - INFO - Category Diversity Calculated
+2026-02-09 19:19:55,898 - INFO - Data Saved to E:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\features\features.csv
+2026-02-09 19:22:25,535 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 19:22:25,553 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 19:22:25,571 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 19:22:25,601 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 19:22:25,641 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 19:22:25,905 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\cleaned\cleaned.csv
+2026-02-09 19:22:26,011 - INFO - Customer Total Spend Calculated
+2026-02-09 19:22:26,020 - INFO - Average Order Value Calculated
+2026-02-09 19:22:26,031 - INFO - Purchase Frequency Calculated
+2026-02-09 19:22:26,055 - INFO - Purchase Recency Calculated
+2026-02-09 19:22:26,069 - INFO - Category Diversity Calculated
+2026-02-09 19:22:26,953 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\features\features.csv
+2026-02-09 19:23:37,353 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 19:23:37,370 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 19:23:37,389 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 19:23:37,420 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 19:23:37,461 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 19:23:37,715 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\cleaned\cleaned.csv
+2026-02-09 19:23:37,846 - INFO - Customer Total Spend Calculated
+2026-02-09 19:23:37,854 - INFO - Average Order Value Calculated
+2026-02-09 19:23:37,864 - INFO - Purchase Frequency Calculated
+2026-02-09 19:23:37,887 - INFO - Purchase Recency Calculated
+2026-02-09 19:23:37,900 - INFO - Category Diversity Calculated
+2026-02-09 19:25:06,008 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 19:25:06,026 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 19:25:06,046 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 19:25:06,077 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 19:25:06,118 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 19:25:06,371 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\cleaned\cleaned.csv
+2026-02-09 19:25:06,475 - INFO - Customer Total Spend Calculated
+2026-02-09 19:25:06,482 - INFO - Average Order Value Calculated
+2026-02-09 19:25:06,492 - INFO - Purchase Frequency Calculated
+2026-02-09 19:25:06,514 - INFO - Purchase Recency Calculated
+2026-02-09 19:25:06,527 - INFO - Category Diversity Calculated
+2026-02-09 19:26:46,972 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 19:26:46,990 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 19:26:47,009 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 19:26:47,038 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 19:26:47,078 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 19:26:47,332 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\cleaned\cleaned.csv
+2026-02-09 19:26:47,435 - INFO - Customer Total Spend Calculated
+2026-02-09 19:26:47,443 - INFO - Average Order Value Calculated
+2026-02-09 19:26:47,452 - INFO - Purchase Frequency Calculated
+2026-02-09 19:26:47,474 - INFO - Purchase Recency Calculated
+2026-02-09 19:26:47,487 - INFO - Category Diversity Calculated
+2026-02-09 19:26:48,333 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\features\features.csv
+2026-02-09 19:26:49,314 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\analysis\analysis.csv
+2026-02-09 19:32:01,122 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 19:32:01,140 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 19:32:01,158 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 19:32:01,189 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 19:32:01,230 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 19:32:01,479 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\cleaned\cleaned.csv
+2026-02-09 19:32:01,574 - INFO - Customer Total Spend Calculated
+2026-02-09 19:32:01,581 - INFO - Average Order Value Calculated
+2026-02-09 19:32:01,591 - INFO - Purchase Frequency Calculated
+2026-02-09 19:32:01,612 - INFO - Purchase Recency Calculated
+2026-02-09 19:32:01,625 - INFO - Category Diversity Calculated
+2026-02-09 19:32:02,396 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\features\features.csv
+2026-02-09 19:32:16,643 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\analysis\analysis.csv
+2026-02-09 19:33:15,930 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 19:33:15,949 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 19:33:15,967 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 19:33:15,998 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 19:33:16,038 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 19:33:16,287 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\cleaned\cleaned.csv
+2026-02-09 19:33:16,383 - INFO - Customer Total Spend Calculated
+2026-02-09 19:33:16,391 - INFO - Average Order Value Calculated
+2026-02-09 19:33:16,400 - INFO - Purchase Frequency Calculated
+2026-02-09 19:33:16,421 - INFO - Purchase Recency Calculated
+2026-02-09 19:33:16,435 - INFO - Category Diversity Calculated
+2026-02-09 19:33:17,148 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\features\features.csv
+2026-02-09 19:33:45,542 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 19:33:45,560 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 19:33:45,579 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 19:33:45,608 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 19:33:45,648 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 19:33:45,891 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\cleaned\cleaned.csv
+2026-02-09 19:33:45,987 - INFO - Customer Total Spend Calculated
+2026-02-09 19:33:45,995 - INFO - Average Order Value Calculated
+2026-02-09 19:33:46,004 - INFO - Purchase Frequency Calculated
+2026-02-09 19:33:46,026 - INFO - Purchase Recency Calculated
+2026-02-09 19:33:46,039 - INFO - Category Diversity Calculated
+2026-02-09 19:33:46,775 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\features\features.csv
+2026-02-09 19:34:14,504 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\analysis\analysis.csv
+2026-02-09 19:34:34,520 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 19:34:34,539 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 19:34:34,557 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 19:34:34,586 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 19:34:34,626 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 19:34:34,871 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\cleaned\cleaned.csv
+2026-02-09 19:34:34,966 - INFO - Customer Total Spend Calculated
+2026-02-09 19:34:34,974 - INFO - Average Order Value Calculated
+2026-02-09 19:34:34,983 - INFO - Purchase Frequency Calculated
+2026-02-09 19:34:35,005 - INFO - Purchase Recency Calculated
+2026-02-09 19:34:35,018 - INFO - Category Diversity Calculated
+2026-02-09 19:34:35,741 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\features\features.csv
+2026-02-09 19:35:05,775 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\analysis\analysis.csv
+2026-02-09 19:36:03,034 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 19:36:03,052 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 19:36:03,070 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 19:36:03,100 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 19:36:03,140 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 19:36:03,387 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\cleaned\cleaned.csv
+2026-02-09 19:36:03,482 - INFO - Customer Total Spend Calculated
+2026-02-09 19:36:03,490 - INFO - Average Order Value Calculated
+2026-02-09 19:36:03,499 - INFO - Purchase Frequency Calculated
+2026-02-09 19:36:03,520 - INFO - Purchase Recency Calculated
+2026-02-09 19:36:03,533 - INFO - Category Diversity Calculated
+2026-02-09 19:36:04,243 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\features\features.csv
+2026-02-09 19:38:24,209 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 19:38:24,228 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 19:38:24,248 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 19:38:24,279 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 19:38:24,319 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 19:38:24,568 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\cleaned\cleaned.csv
+2026-02-09 19:38:24,665 - INFO - Customer Total Spend Calculated
+2026-02-09 19:38:24,673 - INFO - Average Order Value Calculated
+2026-02-09 19:38:24,682 - INFO - Purchase Frequency Calculated
+2026-02-09 19:38:24,705 - INFO - Purchase Recency Calculated
+2026-02-09 19:38:24,718 - INFO - Category Diversity Calculated
+2026-02-09 19:38:25,492 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\features\features.csv
+2026-02-09 19:38:56,456 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\analysis\analysis.csv
+2026-02-09 19:40:38,142 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 19:40:38,160 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 19:40:38,179 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 19:40:38,210 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 19:40:38,250 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 19:40:38,499 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\cleaned\cleaned.csv
+2026-02-09 19:40:38,598 - INFO - Customer Total Spend Calculated
+2026-02-09 19:40:38,606 - INFO - Average Order Value Calculated
+2026-02-09 19:40:38,616 - INFO - Purchase Frequency Calculated
+2026-02-09 19:40:38,640 - INFO - Purchase Recency Calculated
+2026-02-09 19:40:38,653 - INFO - Category Diversity Calculated
+2026-02-09 19:40:39,451 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\features\features.csv
+2026-02-09 19:40:58,143 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\analysis\analysis.csv
+2026-02-09 19:41:19,393 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 19:41:19,411 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 19:41:19,430 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 19:41:19,460 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 19:41:19,500 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 19:41:19,739 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\cleaned\cleaned.csv
+2026-02-09 19:41:19,834 - INFO - Customer Total Spend Calculated
+2026-02-09 19:41:19,841 - INFO - Average Order Value Calculated
+2026-02-09 19:41:19,850 - INFO - Purchase Frequency Calculated
+2026-02-09 19:41:19,870 - INFO - Purchase Recency Calculated
+2026-02-09 19:41:19,882 - INFO - Category Diversity Calculated
+2026-02-09 19:41:20,621 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\features\features.csv
+2026-02-09 19:41:42,007 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\analysis\analysis.csv
+2026-02-09 19:50:46,799 - INFO - Null Values Removed from Transaction ID :0 
+2026-02-09 19:50:46,817 - INFO - Null Values Removed from Transaction Date :0 
+2026-02-09 19:50:46,834 - INFO - Null Values Removed from Customer ID :0 
+2026-02-09 19:50:46,864 - INFO - Null Values Removed from Transaction Status :0 
+2026-02-09 19:50:46,905 - INFO - Null Values Found : Transaction_ID        0
+Transaction_Date      0
+Customer_ID           0
+Product_Name          0
+Quantity              0
+Price                 0
+Payment_Method        0
+Transaction_Status    0
+dtype: int64
+2026-02-09 19:50:47,149 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\cleaned\cleaned.csv
+2026-02-09 19:50:47,331 - INFO - Customer Total Spend Calculated
+2026-02-09 19:50:47,338 - INFO - Average Order Value Calculated
+2026-02-09 19:50:47,348 - INFO - Purchase Frequency Calculated
+2026-02-09 19:50:47,369 - INFO - Purchase Recency Calculated
+2026-02-09 19:50:47,381 - INFO - Category Diversity Calculated
+2026-02-09 19:50:48,136 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\features\features.csv
+2026-02-09 19:51:23,637 - INFO - Data Saved to e:\Uni Stuff\Roadmap AI Engineer\ai-engineer-journey\02-data-analysis\Revenue Drivers & Customer Behavior Analysis\data\output\analysis\analysis.csv
