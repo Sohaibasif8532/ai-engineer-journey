@@ -100,7 +100,7 @@ Each cleaning function executes **only if required**. For example:
 
 ## How to Use
 
-```python
+
 from rdcba_pipeline import RDCBA
 import os
 
