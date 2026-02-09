@@ -11,17 +11,15 @@ filedir=os.path.dirname(os.path.abspath(__file__))
 projectroot=os.path.dirname(filedir)
 inputdata=os.path.join(projectroot,"data","input","input.csv")
 cleaned=os.path.join(projectroot,"data","output","cleaned","cleaned.csv")
-analysis=os.path.join(projectroot,"data","output","analysis","analysis.csv")
 featured=os.path.join(projectroot,"data","output","features","features.csv")
 logfiles=os.path.join(projectroot,"logs","logs.log")
 
 
 
 class RDCBA:
-    def __init__(self, inputdata, cleaned, analysis, featured, logfiles):
+    def __init__(self, inputdata, cleaned, featured, logfiles):
         self.inputdata=inputdata
         self.cleaned=cleaned
-        self.analysis=analysis
         self.featured=featured
         self.logfiles=logfiles
         self.snapshots={}
@@ -127,25 +125,42 @@ class RDCBA:
 
         self.df["High Value Transaction"]= (self.df["Price"]>500).astype(int)
         
-        self.df["Repeating Customer"]= (self.df["Transaction_ID"].duplicated()).astype(int)
+        counts = self.df.groupby("Customer_ID")["Transaction_ID"].transform("count")
+        self.df["Repeating Customer"] = (counts > 1).astype(int)
     
     def Customer_total_spend(self):
         self.df["Customer Total Spend"]= self.df.groupby("Customer_ID")["Price"].transform("sum")
+        logging.info("Customer Total Spend Calculated")
 
     def AverageOrderValue(self):
         self.df["Average Order Value"]= self.df.groupby("Customer_ID")["Price"].transform("mean")
+        logging.info("Average Order Value Calculated")
     
     def PurchaseFrequency(self):
         self.df["Purchase Frequency"]= self.df.groupby("Customer_ID")["Transaction_Date"].transform("count")
+        logging.info("Purchase Frequency Calculated")
     
     def PurchaseRecency(self):
         self.df["Transaction_Date"] = pd.to_datetime(self.df["Transaction_Date"], errors="coerce")
         ref_date = self.df["Transaction_Date"].max()
         self.df["LastPurchase"]= self.df.groupby("Customer_ID")["Transaction_Date"].transform("max")
         self.df["Purchase Recency"]= (ref_date - self.df["LastPurchase"]).dt.days
+        logging.info("Purchase Recency Calculated")
 
+    def CategoryDiversity(self):
+        self.df["Category Diversity"]= self.df.groupby("Customer_ID")["Product_Name"].transform("nunique")
+        logging.info("Category Diversity Calculated")
 
-    
+    def Aggregations(self, threshold=900):
+        customer_spend = self.df.groupby("Customer_ID")["Price"].max().reset_index()
+        customer_spend["High/Low Value Customers"] = customer_spend["Price"].apply(
+            lambda x: "High Value Customer" if x > threshold else "Low Value Customer"
+        )
+        logging.info("Customer Total Spend Calculated")
+        
+        # Merge back into main df
+        self.df = self.df.merge(customer_spend[["Customer_ID","High/Low Value Customers"]], on="Customer_ID", how="left")
+
     def save_data(self, file_path, columns=None):
         if columns:
             self.df[columns].to_csv(file_path, index=False)
@@ -156,10 +171,7 @@ class RDCBA:
 
 
 
-
-
-
-app=RDCBA(inputdata, cleaned, analysis, featured, logfiles)
+app=RDCBA(inputdata, cleaned, featured, logfiles)
 app.loadData()
 app.validate_data()
 app.save_data(app.cleaned) 
@@ -168,4 +180,6 @@ app.Customer_total_spend()
 app.AverageOrderValue()
 app.PurchaseFrequency()
 app.PurchaseRecency()
-app.save_data(app.featured, columns=["Customer_ID","Transaction_ID","High Value Transaction", "Repeating Customer", "Customer Total Spend", "Average Order Value", "Purchase Frequency", "Purchase Recency"]) 
+app.CategoryDiversity()
+app.Aggregations()
+app.save_data(app.featured, columns=["Customer_ID","Transaction_ID","High Value Transaction", "Repeating Customer", "Customer Total Spend", "Average Order Value", "Purchase Frequency", "Purchase Recency", "Category Diversity","High/Low Value Customers"]) 
