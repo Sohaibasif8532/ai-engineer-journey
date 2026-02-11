@@ -29,10 +29,12 @@ class Dataloader:
         if os.path.exists(self.inputdata):
             self.df=pd.read_csv(self.inputdata)
             logging.info("Data loaded successfully")
+            return self.df
         else:
             logging.info("Data not found")
 
 
 
-app=Dataloader(inputdata,Dtreeresult,Rforestresult,logisticresult,MLData)
-app.loaddata()
+if __name__ == "__main__":
+    app=Dataloader(inputdata,Dtreeresult,Rforestresult,logisticresult,MLData)
+    app.loaddata()
