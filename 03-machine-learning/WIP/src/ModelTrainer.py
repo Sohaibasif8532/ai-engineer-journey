@@ -2,12 +2,16 @@ from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import mean_squared_error,mean_absolute_error,r2_score
+import joblib
 import pandas as pd
 import numpy as np
 import logging
 import os
-from dataloader import MLData
+from dataloader import MLData, ModelPath
+
 class ModelTraining:
+    
     def __init__(self,df):
         self.df=df
 
@@ -20,10 +24,17 @@ class ModelTraining:
 
         rf=RandomForestRegressor(n_estimators=100,random_state=42)
         rfresult=rf.fit(x_train,y_train)
-        print("shit worked so far gng")
+        y_pred=rfresult.predict(x_eval)
+        joblib.dump(rfresult, ModelPath)
+        print(f"Model saved Successfully at: {ModelPath}")
+
+        mse=mean_squared_error(y_eval,y_pred)
+        print("Mean Squared Error:",mse)
+        return y_pred
 
 if __name__=="__main__":
+    print("Loading data and starting training...")
     df_ml=pd.read_csv(MLData)
     model_app=ModelTraining(df_ml)
     model_app.ModelTrainer()
-
+    print("Training complete.")

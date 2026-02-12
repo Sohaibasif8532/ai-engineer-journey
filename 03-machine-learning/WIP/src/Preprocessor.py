@@ -30,7 +30,7 @@ class preprocessing:
         X_final=hstack([Xfitted,Xcatfitted])
         df=pd.DataFrame(X_final,columns=final_cols)
         df.to_csv(MLData,index=False)
-
+        print("Data Preprocessed and Stored in MLData")
         logging.info(f"Data Preprocessed and Stored in MLData")
 
 

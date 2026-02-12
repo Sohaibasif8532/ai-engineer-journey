@@ -9,6 +9,7 @@ Dtreeresult = os.path.join(project_root, "Data/output/Algorithm Results/decision
 Rforestresult = os.path.join(project_root, "Data/output/Algorithm Results/random_forest/r_forest_tree.csv")
 logisticresult = os.path.join(project_root, "Data/output/Algorithm Results/logistic_regression/logistic_regression.csv")
 MLData = os.path.join(project_root, "Data/output/ML Ready Data/MLdata.csv")
+ModelPath = os.path.join(project_root, "Data/Models/Trained_Random_Forest.pkl")
 
 class Dataloader:
 
